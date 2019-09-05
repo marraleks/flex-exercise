@@ -14,11 +14,6 @@ $default-header-family: 'montserrat';
 body {
     background-color: #334640;
 }
-.abs{
-    position: absolute;
-    left:200px;
-    top:100px;
-}
 
 header {
     height: 10vh;
@@ -27,16 +22,22 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    .logo {
-        margin-left: 50%;
-        margin-top: 3%;
-        transform: translate(-50%);
-        width: 25%;
-    }
     .menu {
         margin-right: 20px;
     }
+    .home {
+        margin-left: 20px;
+    }
 }
+
+.logo {
+    display: block;
+    position: absolute;
+    width: 25%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 
 main {
     display: flex;
@@ -88,11 +89,11 @@ main {
     flex-wrap: wrap;
     .former {
         width: 100vw;
-        height: 50px;
+        height: 100vh;
         flex-grow: 1;
         background-size: cover;
         background-position: center top;
-        color: white;
+        color: white;;
     }
 }
 

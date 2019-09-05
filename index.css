@@ -11,12 +11,6 @@ body {
   background-color: #334640;
 }
 
-.abs {
-  position: absolute;
-  left: 200px;
-  top: 100px;
-}
-
 header {
   height: 10vh;
   display: flex;
@@ -25,14 +19,19 @@ header {
   align-items: center;
   position: fixed;
 }
-header .logo {
-  margin-left: 50%;
-  margin-top: 3%;
-  transform: translate(-50%);
-  width: 25%;
-}
 header .menu {
   margin-right: 20px;
+}
+header .home {
+  margin-left: 20px;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  width: 25%;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 main {
@@ -85,7 +84,7 @@ main .item3 {
 }
 .former-articles .former {
   width: 100vw;
-  height: 50px;
+  height: 100vh;
   flex-grow: 1;
   background-size: cover;
   background-position: center top;
