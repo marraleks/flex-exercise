@@ -97,6 +97,14 @@ main {
         background-position: center;
         color: $default-font-color;
     }
+    .former:nth-child(odd) {
+        padding: 250px 200px 0px 700px;
+    }
+    .former:nth-child(even) {
+        padding: 250px 700px 0px 200px;
+    }
+    
+    
     h3 {
         font-family: $default-header-family;
         font-weight: 800;

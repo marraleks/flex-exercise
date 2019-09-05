@@ -91,6 +91,12 @@ main .item3 {
   background-position: center;
   color: #f2f2f2;
 }
+.former-articles .former:nth-child(odd) {
+  padding: 250px 200px 0px 700px;
+}
+.former-articles .former:nth-child(even) {
+  padding: 250px 700px 0px 200px;
+}
 .former-articles h3 {
   font-family: "montserrat";
   font-weight: 800;
