@@ -1,0 +1,102 @@
+@import url("https://use.typekit.net/wgt3qdl.css");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800&display=swap');
+
+
+$default-font-family: lft-etica, sans-serif;
+$default-header-family: 'montserrat';
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $default-font-family;
+}
+body {
+    background-color: #334640;
+}
+.abs{
+    position: absolute;
+    left:200px;
+    top:100px;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    .logo {
+        margin-left: 50%;
+        margin-top: 3%;
+        transform: translate(-50%);
+        width: 25%;
+    }
+    .menu {
+        margin-right: 20px;
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+        height: 100vh;
+        width: 300px;
+        flex-grow: 1;
+        background-size: cover;
+        background-position: center top;
+        color: white;
+        padding: 70vh 80px 0 60px;
+    }
+    h2 {
+        font-family: $default-header-family;
+        font-weight: 800;
+    }
+    p {
+        font-weight: 200; 
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        font-family: $default-header-family;    
+    }
+    .item1 {
+        background-image: url("./images/riktigformat_Aron.jpg");
+    }
+    .item2 {
+        background-image: url("./images/riktig_format.jpg");
+    }
+    .item3 {
+        background-image: url("./images/rikgitfarmat.dude.jpg");
+    }
+}
+
+@media (max-width:900px) {
+    main {
+        width: 300vw;
+        .item {
+            width: 100vw;
+        }
+    }
+}
+
+.former-articles {
+    display: flex;
+    flex-wrap: wrap;
+    .former {
+        width: 100vw;
+        height: 50px;
+        flex-grow: 1;
+        background-size: cover;
+        background-position: center top;
+        color: white;
+    }
+}
+
+footer {
+    height: 10vh;
+}
+
