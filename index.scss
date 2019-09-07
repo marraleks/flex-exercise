@@ -63,7 +63,10 @@ main {
         color: $default-font-color;
         text-decoration: none;
         font-weight: 500;
-        font-family: $default-header-family;    
+        font-family: $default-header-family; 
+        padding: 90px; 
+        padding-top: 15px;
+        display: inline-block;  
     }
     .item1 {
         background-image: url("./src/nyeste/riktigformat_Aron.jpg");
@@ -109,6 +112,8 @@ main {
         text-decoration: none;
         color: $default-font-color;
         font-weight: 400;
+        margin-top: 30px;
+        display: inline-block;        
     }
     .article1 {
         background-image: url("./src/eldreartikler/DavidGoggins.png");

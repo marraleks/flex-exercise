@@ -59,6 +59,9 @@ main a {
   text-decoration: none;
   font-weight: 500;
   font-family: "montserrat";
+  padding: 90px;
+  padding-top: 15px;
+  display: inline-block;
 }
 main .item1 {
   background-image: url("./src/nyeste/riktigformat_Aron.jpg");
@@ -101,6 +104,8 @@ main .item3 {
   text-decoration: none;
   color: #f2f2f2;
   font-weight: 400;
+  margin-top: 30px;
+  display: inline-block;
 }
 .former-articles .article1 {
   background-image: url("./src/eldreartikler/DavidGoggins.png");
