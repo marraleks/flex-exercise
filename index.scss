@@ -66,24 +66,16 @@ main {
         font-family: $default-header-family;    
     }
     .item1 {
-        background-image: url("./images/nyeste/riktigformat_Aron.jpg");
+        background-image: url("./src/nyeste/riktigformat_Aron.jpg");
     }
     .item2 {
-        background-image: url("./images/nyeste/riktig_format.jpg");
+        background-image: url("./src/nyeste/riktig_format.jpg");
     }
     .item3 {
-        background-image: url("./images/nyeste/rikgitfarmat.dude.jpg");
+        background-image: url("./src/nyeste/rikgitfarmat.dude.jpg");
     }
 }
 
-@media (max-width:900px) {
-    main {
-        width: 300vw;
-        .item {
-            width: 100vw;
-        }
-    }
-}
 
 .former-articles {
     display: flex;
@@ -98,10 +90,10 @@ main {
         color: $default-font-color;
     }
     .former:nth-child(odd) {
-        padding: 250px 200px 0px 700px;
+        padding: 300px 100px 0px 50vw;
     }
     .former:nth-child(even) {
-        padding: 250px 700px 0px 200px;
+        padding: 300px 50vw 0px 100px;
     }
     
     
@@ -119,23 +111,61 @@ main {
         font-weight: 400;
     }
     .article1 {
-        background-image: url("./images/eldreartikler/DavidGoggins.png");
+        background-image: url("./src/eldreartikler/DavidGoggins.png");
     }
     .article2 {
-        background-image: url("./images/eldreartikler/GirlInTheBox.png");
+        background-image: url("./src/eldreartikler/GirlInTheBox.png");
     }
     .article3 {
-        background-image: url("./images/eldreartikler/SheryllPowell.png");
+        background-image: url("./src/eldreartikler/SheryllPowell.png");
     }
     .article4 {
-        background-image: url("./images/eldreartikler/MaryBrunner.png");
+        background-image: url("./src/eldreartikler/MaryBrunner.png");
     }
     .article5 {
-        background-image: url("./images/eldreartikler/Harrison.png");
+        background-image: url("./src/eldreartikler/Harrison.png");
     }
 }
 
-footer {
-    height: 10vh;
+@media (max-width:900px) {
+    .logo {
+        display: none;
+    }
+    main {
+        width: 300vw;
+        .item {
+            width: 100vw;
+        }
+    }
+    .former-articles {
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 20px;
+        padding-left: 20px;
+        .former {
+            height: 30vh;
+            padding-top: 50px; 
+            background-size: cover;
+            background-position: center;
+            color: $default-font-color;
+        }
+        h3 {
+            display: none;
+        }
+        p {
+           display: none;
+        }
+        a {
+           display: none;
+        }
+        .former:nth-child(odd) {
+            padding: 0 0 0 0;
+        }
+        .former:nth-child(even) {
+            padding: 0 0 0 0;
+        }
+        
+    }
+
 }
 
