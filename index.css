@@ -73,6 +73,13 @@ main .item3 {
   background-image: url("./src/nyeste/rikgitfarmat.dude.jpg");
 }
 
+.header-menu {
+  padding-right: 40px;
+}
+.header-menu img {
+  height: 25px;
+}
+
 .former-articles {
   display: flex;
   flex-wrap: wrap;
