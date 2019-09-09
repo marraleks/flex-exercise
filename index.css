@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: lft-etica, sans-serif;
+  font-family: "lft-etica", sans-serif;
 }
 
 body {
@@ -33,6 +33,7 @@ header #knapp {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: 30px;
 }
 header #knapp.visible {
   height: 25px;
@@ -55,8 +56,18 @@ header #knapp.visible {
 .overlay-menu .logo-menu {
   height: 50px;
   position: relative;
-  top: 50px;
-  left: 200px;
+  left: 140px;
+  bottom: 23px;
+}
+.overlay-menu #search {
+  padding-left: 1100px;
+  padding-top: 25px;
+  justify-content: center;
+}
+.overlay-menu .lupen {
+  height: 20px;
+  justify-content: center;
+  padding-left: 10px;
 }
 .overlay-menu .overlay-footer {
   display: flex;
@@ -72,25 +83,122 @@ header #knapp.visible {
   padding-bottom: 10px;
   font-weight: 500;
 }
+.overlay-menu .overlay-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.overlay-menu .overlay-footer div {
+  padding-left: 220px;
+}
+.overlay-menu h4 {
+  padding-top: 20px;
+  color: #D15827;
+  font-size: 13px;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
 .overlay-menu p {
   color: #D15827;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 300;
 }
 .overlay-menu .box {
   background-color: #201F1F;
   color: #f2f2f2;
-  padding: 40px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  font-size: 15px;
+  padding: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   justify-content: center;
   display: grid;
-  grid-template: 150px/auto auto auto;
-  grid-gap: 80px;
+  grid-template: 140px/auto auto auto;
+  grid-gap: 95px;
 }
 .overlay-menu .person {
   height: 150px;
+}
+.overlay-menu #david h4 {
+  font-size: 14px;
+  color: #f2f2f2;
+  font-family: "montserrat";
+  font-weight: 800;
+  margin-top: -22px;
+}
+.overlay-menu #david p {
+  font-size: 12;
+  color: #f2f2f2;
+  font-family: "lft-etica", sans-serif;
+  font-weight: 300;
+  margin-top: -5px;
+}
+.overlay-menu #boxgirl h4 {
+  font-size: 14px;
+  color: #f2f2f2;
+  font-family: "montserrat";
+  font-weight: 800;
+  margin-top: -22px;
+}
+.overlay-menu #boxgirl p {
+  font-size: 12;
+  color: #f2f2f2;
+  font-family: "lft-etica", sans-serif;
+  font-weight: 300;
+  margin-top: -5px;
+}
+.overlay-menu #harrison h4 {
+  font-size: 14px;
+  color: #f2f2f2;
+  font-family: "montserrat";
+  font-weight: 800;
+  margin-top: -22px;
+}
+.overlay-menu #harrison p {
+  font-size: 12;
+  color: #f2f2f2;
+  font-family: "lft-etica", sans-serif;
+  font-weight: 300;
+  margin-top: -5px;
+}
+.overlay-menu #mary h4 {
+  font-size: 14px;
+  color: #f2f2f2;
+  font-family: "montserrat";
+  font-weight: 800;
+  margin-top: -22px;
+}
+.overlay-menu #mary p {
+  font-size: 12;
+  color: #f2f2f2;
+  font-family: "lft-etica", sans-serif;
+  font-weight: 300;
+  margin-top: -5px;
+}
+.overlay-menu #sheryl h4 {
+  font-size: 14px;
+  color: #f2f2f2;
+  font-family: "montserrat";
+  font-weight: 800;
+  margin-top: -22px;
+}
+.overlay-menu #sheryl p {
+  font-size: 12;
+  color: #f2f2f2;
+  font-family: "lft-etica", sans-serif;
+  font-weight: 300;
+  margin-top: -5px;
+}
+.overlay-menu #jane h4 {
+  font-size: 14px;
+  color: #f2f2f2;
+  font-family: "montserrat";
+  font-weight: 800;
+  margin-top: -22px;
+}
+.overlay-menu #jane p {
+  font-size: 12;
+  color: #f2f2f2;
+  font-family: "lft-etica", sans-serif;
+  font-weight: 300;
+  margin-top: -5px;
 }
 
 .overlay-menu.visible {
@@ -179,7 +287,7 @@ main .item3 {
   font-weight: 800;
 }
 .former-articles p {
-  font-family: lft-etica, sans-serif;
+  font-family: "lft-etica", sans-serif;
   font-weight: 200;
 }
 .former-articles a {
