@@ -25,6 +25,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 10;
 
     .menu {
         margin-right: 20px;
@@ -33,18 +34,56 @@ header {
     .home {
         margin-left: 20px;
     }
+    #knapp {
+        height: 30px;
+        width: 20px;
+        background-image: url("./assets/misc.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #knapp.visible {
+        height: 25px;
+        width: 20px;
+        background-image: url("./assets/X-.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
+
+
 
 .overlay-menu {
     height: 100vh;
+    width: 100vw;
     background-color: #2C2C2C;
+    position: absolute;
+    z-index: 2;
+    transition: 0.5s;
+    right: 0px;
+        .logo-menu {
+            height: 50px;
+            position: relative;
+            top: 50px;
+            left: 200px;
+        }
+        .overlay-footer {
+            display: flex;
+            flex-wrap: wrap;
+            
 
-    .logo-menu {
-        height: 50px;
-        position: relative;
-        top: 50px;
-        left: 200px;
-    }
+            div {
+                padding-left: 200px;
+            }
+        }
+        h4 {
+            padding-top: 30px;
+            color: #D15827;
+            font-size: 16px;
+            padding-bottom: 10px;
+            font-weight: 500;
+        }
 
     .overlay-footer {
         display: flex;
@@ -83,34 +122,19 @@ header {
         grid-template: 150px / auto auto auto;
         grid-gap: 80px;
     }
-
-    .david {
-        height: 150px;
-
-
-    }
-
-    .boxgirl {
+    .person {
         height: 150px;
     }
-
-    .harrison {
-        height: 150px;
-    }
-
-    .marybrunner {
-        height: 150px;
-    }
-
-    .sheryllpowell {
-        height: 150px;
-    }
-
-    .janewilliams {
-        height: 150px;
-    }
-
 }
+
+.overlay-menu.visible {
+    height: 100vh;
+    background-color: #2C2C2C;
+    position: fixed;
+    z-index: 2;
+    right: 0px;
+}
+
 
 .logo {
     display: block;
