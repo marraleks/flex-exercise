@@ -2,16 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800&display=swap');
 
 
-$default-font-family: lft-etica, sans-serif;
+$default-font-family: lft-etica,
+sans-serif;
 $default-header-family: 'montserrat';
 $default-font-color: #f2f2f2;
 
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: $default-font-family;
 }
+
 body {
     background-color: #334640;
 }
@@ -23,12 +25,89 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+
     .menu {
         margin-right: 20px;
     }
+
     .home {
         margin-left: 20px;
     }
+}
+
+.overlay-menu {
+    height: 100vh;
+    background-color: #2C2C2C;
+
+        .logo-menu {
+            height: 50px;
+            position: relative;
+            top: 50px;
+            left: 200px;
+        }
+        .overlay-footer {
+            display: flex;
+            flex-wrap: wrap;
+            
+
+            div {
+                padding-left: 200px;
+            }
+        }
+        h4 {
+            padding-top: 30px;
+            color: #D15827;
+            font-size: 16px;
+            padding-bottom: 10px;
+            font-weight: 500;
+
+            
+            
+        }
+
+        p {
+            color: #D15827;
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+    .box {
+        background-color: #201F1F;
+        color: #f2f2f2;
+        padding: 40px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        font-size: 15px;
+        justify-content: center;
+        display: grid;
+        grid-template: 150px / auto auto auto;
+        grid-gap: 80px; 
+    }
+
+    .david {
+        height: 150px;
+        
+
+    }
+    .boxgirl{
+        height: 150px;
+    }
+    .harrison {
+        height: 150px;
+    }
+
+    .marybrunner {
+        height: 150px;
+    }
+
+    .sheryllpowell {
+        height: 150px;
+    }
+
+    .janewilliams {
+        height: 150px;
+    }
+
 }
 
 .logo {
@@ -42,6 +121,7 @@ header {
 main {
     display: flex;
     flex-wrap: wrap;
+
     .item {
         height: 100vh;
         width: 300px;
@@ -51,29 +131,35 @@ main {
         color: $default-font-color;
         padding: 70vh 80px 0 60px;
     }
+
     h2 {
         font-family: $default-header-family;
         font-weight: 800;
     }
+
     p {
-        font-weight: 200; 
+        font-weight: 200;
     }
+
     a {
         color: $default-font-color;
         text-decoration: none;
         font-weight: 500;
-        font-family: $default-header-family; 
-        padding: 90px; 
+        font-family: $default-header-family;
+        padding: 90px;
         padding-top: 15px;
-        display: inline-block;  
+        display: inline-block;
     }
+
     .item1 {
         background-image: url("./src/nyeste/riktigformat_Aron.jpg");
-        
+
     }
+
     .item2 {
         background-image: url("./src/nyeste/riktig_format.jpg");
     }
+
     .item3 {
         background-image: url("./src/nyeste/rikgitfarmat.dude.jpg");
     }
@@ -81,15 +167,17 @@ main {
 
 .header-menu {
     padding-right: 40px;
+
     img {
         height: 25px;
     }
-    
+
 }
 
 .former-articles {
     display: flex;
     flex-wrap: wrap;
+
     .former {
         width: 100vw;
         height: 100vh;
@@ -99,41 +187,50 @@ main {
         background-position: center;
         color: $default-font-color;
     }
+
     .former:nth-child(odd) {
         padding: 300px 100px 0px 50vw;
     }
+
     .former:nth-child(even) {
         padding: 300px 50vw 0px 100px;
     }
-    
-    
+
+
     h3 {
         font-family: $default-header-family;
         font-weight: 800;
     }
+
     p {
         font-family: $default-font-family;
         font-weight: 200;
     }
+
     a {
         text-decoration: none;
         color: $default-font-color;
         font-weight: 400;
         margin-top: 30px;
-        display: inline-block;        
+        display: inline-block;
     }
+
     .article1 {
         background-image: url("./src/eldreartikler/DavidGoggins.png");
     }
+
     .article2 {
         background-image: url("./src/eldreartikler/GirlInTheBox.png");
     }
+
     .article3 {
         background-image: url("./src/eldreartikler/SheryllPowell.png");
     }
+
     .article4 {
         background-image: url("./src/eldreartikler/MaryBrunner.png");
     }
+
     .article5 {
         background-image: url("./src/eldreartikler/Harrison.png");
     }
@@ -143,41 +240,49 @@ main {
     .logo {
         display: none;
     }
+
     main {
         width: 300vw;
+
         .item {
             width: 100vw;
         }
     }
+
     .former-articles {
         display: flex;
         flex-wrap: wrap;
         padding-right: 20px;
         padding-left: 20px;
+
         .former {
             height: 30vh;
-            padding-top: 50px; 
+            padding-top: 50px;
             background-size: cover;
             background-position: center;
             color: $default-font-color;
         }
+
         h3 {
             display: none;
         }
+
         p {
-           display: none;
+            display: none;
         }
+
         a {
-           display: none;
+            display: none;
         }
+
         .former:nth-child(odd) {
             padding: 0 0 0 0;
         }
+
         .former:nth-child(even) {
             padding: 0 0 0 0;
         }
-        
+
     }
 
 }
-
