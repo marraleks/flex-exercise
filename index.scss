@@ -39,37 +39,37 @@ header {
     height: 100vh;
     background-color: #2C2C2C;
 
-        .logo-menu {
-            height: 50px;
-            position: relative;
-            top: 50px;
-            left: 200px;
-        }
-        .overlay-footer {
-            display: flex;
-            flex-wrap: wrap;
-            
+    .logo-menu {
+        height: 50px;
+        position: relative;
+        top: 50px;
+        left: 200px;
+    }
 
-            div {
-                padding-left: 200px;
-            }
-        }
-        h4 {
-            padding-top: 30px;
-            color: #D15827;
-            font-size: 16px;
-            padding-bottom: 10px;
-            font-weight: 500;
+    .overlay-footer {
+        display: flex;
+        flex-wrap: wrap;
 
-            
-            
-        }
 
-        p {
-            color: #D15827;
-            font-size: 12px;
-            font-weight: 300;
+        div {
+            padding-left: 200px;
         }
+    }
+
+    h4 {
+        padding-top: 30px;
+        color: #D15827;
+        font-size: 16px;
+        padding-bottom: 10px;
+        font-weight: 500;
+
+    }
+
+    p {
+        color: #D15827;
+        font-size: 12px;
+        font-weight: 300;
+    }
 
     .box {
         background-color: #201F1F;
@@ -81,17 +81,19 @@ header {
         justify-content: center;
         display: grid;
         grid-template: 150px / auto auto auto;
-        grid-gap: 80px; 
+        grid-gap: 80px;
     }
 
     .david {
         height: 150px;
-        
+
 
     }
-    .boxgirl{
+
+    .boxgirl {
         height: 150px;
     }
+
     .harrison {
         height: 150px;
     }
