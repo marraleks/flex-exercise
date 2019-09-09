@@ -1,0 +1,87 @@
+@import url("https://use.typekit.net/wgt3qdl.css");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+
+}
+
+.header-menu {
+    padding-right: 40px;
+    img {
+        height: 25px;
+    } 
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    .menu {
+        margin-right: 20px;
+    }
+    .home {
+        margin-left: 20px;
+    }
+}
+
+#info {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 20px;
+    z-index: 9999;
+  }
+
+#artikkel1 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    .orken {
+        background-color: red;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        background-image: url("./src/aronbilder/orken.png");
+    }
+    .aronportrett {
+        background-color: blue;
+        height: 80vh;
+        width: 25vw;
+        margin: auto;
+        background-image: url("./src/aronbilder/Enarm.png");
+        background-size: cover;
+        background-position: center top;
+    }
+    .tekst {
+        width: 100vw;
+        h1 {
+            position: absolute;
+            right: 250px;
+            top: 150px;
+            font-family: montserrat;
+            font-size: 40px;
+            color: #2C2C2C;
+        }
+        p {
+            position: absolute;
+            width: 450px;
+            right: 100px;
+            top: 300px;
+            font-family: lft-etica;
+            font-weight: 300;
+        }
+    }
+    
+}
