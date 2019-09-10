@@ -48,26 +48,72 @@ header #knapp.visible {
   height: 100vh;
   width: 100vw;
   background-color: #2C2C2C;
-  position: absolute;
+  position: fixed;
   z-index: 2;
   transition: 0.5s;
   right: -100vw;
 }
-.overlay-menu .logo-menu {
+.overlay-menu .burger-nav {
+  width: 80vw;
+  height: 10vh;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.overlay-menu .burger-nav .logo-menu {
   height: 50px;
-  position: relative;
-  left: 140px;
-  bottom: 23px;
 }
-.overlay-menu #search {
-  padding-left: 1100px;
-  padding-top: 25px;
-  justify-content: center;
+.overlay-menu .burger-nav .logo-menu img {
+  height: 100%;
 }
-.overlay-menu .lupen {
+.overlay-menu .burger-nav #search {
+  padding-top: 20px;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 200px 40px;
+}
+.overlay-menu .burger-nav #search input {
+  height: 32px;
+  background-color: #201F1F;
+  border: 1px solid #2C2C2C;
+  border-radius: 4px;
+}
+.overlay-menu .burger-nav #search .lupen {
+  position: inline-block;
   height: 20px;
+  margin-top: 4px;
+  margin-left: -14px;
+}
+.overlay-menu .box {
+  background-color: #201F1F;
+}
+.overlay-menu .box .articles {
+  width: 80vw;
+  margin: auto;
+  color: #f2f2f2;
+  padding-top: 50px;
+  padding-bottom: 50px;
   justify-content: center;
-  padding-left: 10px;
+  display: grid;
+  grid-template: 140px/auto auto auto;
+  grid-gap: 95px;
+}
+.overlay-menu #pilh {
+  display: block;
+  background-image: url("./assets/pilh.png");
+  position: relative;
+  height: 40px;
+  width: 20px;
+  z-index: 15;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 95vw;
+  top: 260px;
+  transform: translate(-50%);
 }
 .overlay-menu .overlay-footer {
   display: flex;
@@ -91,27 +137,16 @@ header #knapp.visible {
   padding-left: 220px;
 }
 .overlay-menu h4 {
-  padding-top: 20px;
+  padding-top: 14px;
   color: #D15827;
-  font-size: 13px;
+  font-size: 14px;
   padding-bottom: 10px;
   font-weight: 500;
 }
 .overlay-menu p {
   color: #D15827;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 300;
-}
-.overlay-menu .box {
-  background-color: #201F1F;
-  color: #f2f2f2;
-  padding: 30px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  justify-content: center;
-  display: grid;
-  grid-template: 140px/auto auto auto;
-  grid-gap: 95px;
 }
 .overlay-menu .person {
   height: 150px;
@@ -121,7 +156,7 @@ header #knapp.visible {
   color: #f2f2f2;
   font-family: "montserrat";
   font-weight: 800;
-  margin-top: -22px;
+  margin-top: -15px;
 }
 .overlay-menu #david p {
   font-size: 12;
@@ -135,7 +170,7 @@ header #knapp.visible {
   color: #f2f2f2;
   font-family: "montserrat";
   font-weight: 800;
-  margin-top: -22px;
+  margin-top: -15px;
 }
 .overlay-menu #boxgirl p {
   font-size: 12;
@@ -149,7 +184,7 @@ header #knapp.visible {
   color: #f2f2f2;
   font-family: "montserrat";
   font-weight: 800;
-  margin-top: -22px;
+  margin-top: -15px;
 }
 .overlay-menu #harrison p {
   font-size: 12;
@@ -163,7 +198,7 @@ header #knapp.visible {
   color: #f2f2f2;
   font-family: "montserrat";
   font-weight: 800;
-  margin-top: -22px;
+  margin-top: -15px;
 }
 .overlay-menu #mary p {
   font-size: 12;
@@ -177,7 +212,7 @@ header #knapp.visible {
   color: #f2f2f2;
   font-family: "montserrat";
   font-weight: 800;
-  margin-top: -22px;
+  margin-top: -15px;
 }
 .overlay-menu #sheryl p {
   font-size: 12;
@@ -191,7 +226,7 @@ header #knapp.visible {
   color: #f2f2f2;
   font-family: "montserrat";
   font-weight: 800;
-  margin-top: -22px;
+  margin-top: -15px;
 }
 .overlay-menu #jane p {
   font-size: 12;
