@@ -42,45 +42,70 @@ header .home {
   z-index: 9999;
 }
 
-#artikkel1 {
+.artikkel {
+  margin-bottom: 100px;
+}
+
+.artikkel1 {
   height: 100vh;
   width: 100vw;
   display: flex;
 }
-#artikkel1 .orken {
-  background-color: red;
-  width: 100vw;
+.artikkel1 .orken {
+  min-width: 50vw;
   height: 100vh;
   display: flex;
   background-image: url("./src/aronbilder/orken.png");
+  justify-content: center;
+  align-items: center;
 }
-#artikkel1 .aronportrett {
-  background-color: blue;
+.artikkel1 .aronportrett {
   height: 80vh;
   width: 25vw;
-  margin: auto;
   background-image: url("./src/aronbilder/Enarm.png");
   background-size: cover;
   background-position: center top;
 }
-#artikkel1 .tekst {
-  width: 100vw;
+.artikkel1 .tekst {
+  margin-top: 200px;
 }
-#artikkel1 .tekst h1 {
-  position: absolute;
-  right: 250px;
-  top: 150px;
+.artikkel1 .tekst h1 {
   font-family: montserrat;
   font-size: 40px;
   color: #2C2C2C;
+  margin-left: -100px;
 }
-#artikkel1 .tekst p {
-  position: absolute;
-  width: 450px;
-  right: 100px;
-  top: 300px;
+.artikkel1 .tekst p {
   font-family: lft-etica;
   font-weight: 300;
+  padding: 50px;
+}
+
+.artikkel2 {
+  background-image: url("./src/aronbilder/Bakgrunn.jpg");
+  height: 100vh;
+  widows: 100vw;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+}
+.artikkel2 .gardin {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  z-index: 1;
+}
+.artikkel2 .left {
+  height: auto;
+  width: 100%;
+  background-image: url("./src/aronbilder/Lag 0.png");
+  z-index: 2;
+}
+.artikkel2 .right {
+  height: auto;
+  width: 100%;
+  background-image: url("./src/aronbilder/Lag 2.png");
+  z-index: 3;
 }
 
 /*# sourceMappingURL=aronralston.css.map */

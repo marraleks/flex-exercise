@@ -21,14 +21,17 @@
         </div>
     </header>
     <div id="info">0</div>
-    <div id="artikkel1">
+    <div class="artikkel artikkel1">
         <div class="orken">
-            <div class="aronportrett"
-                data-center-bottom="opacity:0;" 
-                data-bottom-bottom="opacity:1;">
+            <div class="aronportrett" 
+                data-0="transform: translateY(0px)"
+                data-500="transform: translateY(-50px)"
+                >
             </div>
         </div>
-        <div class="tekst">
+        <div class="tekst"
+        data-50="transform: translate(0%, 0%)"
+        data-200="transform: translate(0%, 5%)">
             <h1>The man who<br>amputated his own arm</h1>
             <p>On April 25, 2003, Aron Ralston he traveled to southeastern Utah to explore Canyonlands National Park. He
                 slept in his truck that night, and at 9:15 the next morning — a beautiful, sunny Saturday — he rode his
@@ -37,12 +40,10 @@
         </div>
     </div>
     </div>
-    <div class="tekst">
-        <h1>The man who<br>amputated his own arm</h1>
-        <p>On April 25, 2003, Aron Ralston he traveled to southeastern Utah to explore Canyonlands National Park. He
-            slept in his truck that night, and at 9:15 the next morning — a beautiful, sunny Saturday — he rode his
-            bicycle 15 miles to Bluejohn Canyon, an 11-mile-long gorge that in some places is just 3 feet wide. He
-            locked his bike and walked toward the canyon’s opening.</p>
+    <div class="artikkel artikkel2">
+        <div class="gardin left"></div>
+        <div class="gardin right"></div>
+        <p></p>
     </div>
     </div>
     </div>
@@ -87,23 +88,26 @@
         Your browser does not support the audio element.
     </audio>
 
-    <script src="js/skrollr.js"></script>
     
 
-    <script type="text/javascript">
-        var s = skrollr.init();
-    </script>
 
-<!--
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <script src="js/skrollr.js"></script>
+
+
+
     <script>
         var s = skrollr.init({
-	render: function(data) {
-	  //Log the current scroll position.
-	  $('#info').text(data.curTop);
-	}
-}); 
+            render: function (data) {
+                //Log the current scroll position.
+                $('#info').text(data.curTop);
+            }
+        });
     </script>
--->
 </body>
 
 </html>
