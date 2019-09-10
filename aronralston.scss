@@ -1,6 +1,9 @@
 @import url("https://use.typekit.net/wgt3qdl.css");
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800&display=swap');
 
+$default-font-family: 'lft-etica', sans-serif;
+$default-header-family: 'montserrat';
+
 * { 
     margin: 0;
     padding: 0;
@@ -9,14 +12,12 @@
 
 body {
     background-color: #f2f2f2;
-
-}
-
-.header-menu {
-    padding-right: 40px;
-    img {
-        height: 25px;
-    } 
+    p {
+        font-family: $default-font-family;
+    }
+    h1 {
+        font-family: $default-header-family;
+    }
 }
 
 header {
@@ -26,18 +27,34 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    .menu {
-        margin-right: 20px;
+    z-index: 10;
+
+    #misc {
+        height: 30px;
+        width: 20px;
+        background-image: url("./assets/misc.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 30px;
+        margin-right: 30px;
     }
-    .home {
-        margin-left: 20px;
+    #tilbake {
+        height: 30px;
+        width: 20px;
+        background-image: url("./assets/pilv.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 30px;
+        margin-left: 30px;
     }
 }
 
 #info {
     position: fixed;
     top: 20px;
-    left: 20px;
+    left: 5%;
     background-color: rgba(0,0,0,0.5);
     color: #fff;
     padding: 20px;
@@ -58,7 +75,7 @@ header {
             display: flex;
             background-image: url("./src/aronbilder/orken.png");
             justify-content: center;
-            align-items:center;
+            align-items: center;
         }
         .aronportrett {
             height: 80vh;
@@ -70,13 +87,11 @@ header {
         .tekst {        
             margin-top:200px;
             h1 {
-                font-family: montserrat;
                 font-size: 40px;
                 color: #2C2C2C;
                 margin-left:-100px;
             }
             p {
-                font-family: lft-etica;
                 font-weight: 300;
                 padding: 50px;
             }
@@ -86,31 +101,51 @@ header {
     .artikkel2 {
         background-image: url("./src/aronbilder/Bakgrunn.jpg");
         height: 100vh;
-        widows: 100vw;
+        width: 100vw;
         background-size: cover;
         background-position: center top;
         display: flex;
        
         .gardin {
+            background-size: cover;
+            background-position: center;
             height: 100vh;
             width: 100vw;
-            background-size: cover;
-            z-index: 1;
         }
         
         .left {
-            height: auto;
-            width: 100%;
             background-image: url("./src/aronbilder/Lag\ 0.png");
-            z-index: 2;
         }
         .right {
-            height: auto;
-            width: 100%;
             background-image: url("./src/aronbilder/Lag\ 2.png");
-            z-index: 3;
         }
-    
+        p {
+            position: fixed;
+        }
     }
+
+    .artikkel4 {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        background-image: url("./src/aronbilder/Nattbilde.png");
+        background-size: cover;
+        .container {
+            min-width: 50vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .tekst1 {        
+            margin-top:200px;
+            p {
+                color: #f2f2f2;
+                font-weight: 300;
+                padding: 50px;
+            }
+        }
+    }
+    
     
 
