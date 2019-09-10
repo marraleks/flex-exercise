@@ -27,13 +27,6 @@ header {
     position: fixed;
     z-index: 10;
 
-    .menu {
-        margin-right: 20px;
-    }
-
-    .home {
-        margin-left: 20px;
-    }
 
     #knapp {
         height: 30px;
@@ -109,6 +102,8 @@ header {
         background-color: #201F1F;
         .articles{
             width:80vw;
+            max-height:60vh;
+            overflow:hidden;
             margin:auto;
             color: #f2f2f2;
             padding-top: 50px;
@@ -117,6 +112,21 @@ header {
             display: grid;
             grid-template: 140px / auto auto auto;
             grid-gap: 95px;    
+        }
+    }
+
+    @media (max-width:1300px){
+        .box {
+            .articles{
+                grid-template: 140px / auto auto;
+            }            
+        }
+    }
+    @media (max-width:900px){
+        .box {
+            .articles{
+                grid-template: 140px / auto;
+            }            
         }
     }
 
