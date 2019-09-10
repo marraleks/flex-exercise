@@ -98,13 +98,52 @@ header #knapp.visible {
 }
 @media (max-width: 1300px) {
   .overlay-menu .box .articles {
-    grid-template: 140px/auto auto;
+    grid-template: 140px/auto auto auto;
     overflow: hidden;
+    grid-gap: 85px;
+  }
+  .overlay-menu .box .person {
+    height: 120px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+  .overlay-menu .box .articles {
+    grid-template: 140px/auto auto;
+    overflow: hidden;
+    grid-gap: 80px;
+  }
+  .overlay-menu .person {
+    height: 110px;
+  }
+}
+@media (max-width: 850px) {
+  .overlay-menu .box .articles {
+    grid-template: 140px/auto auto;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    grid-gap: 75px;
+  }
+  .overlay-menu #pilh {
+    visibility: hidden;
+  }
+  .overlay-menu .person {
+    height: 80px;
+  }
+}
+@media (max-width: 660px) {
   .overlay-menu .box .articles {
     grid-template: 140px/auto;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    grid-gap: 70px;
+  }
+  .overlay-menu #pilh {
+    visibility: hidden;
+  }
+  .overlay-menu .person {
+    height: 80px;
   }
 }
 .overlay-menu #pilh {

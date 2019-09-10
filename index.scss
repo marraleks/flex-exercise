@@ -117,18 +117,68 @@ header {
     @media (max-width:1300px){
         .box {
             .articles{
+                grid-template: 140px / auto auto auto;
+                overflow: hidden;
+                grid-gap: 85px; 
+            }      
+            
+            .person {
+                height: 120px;
+            }
+        }
+
+    }
+    @media (max-width:1000px){
+        .box {
+            .articles{
                 grid-template: 140px / auto auto;
                 overflow: hidden;
+                grid-gap: 80px;
+            }           
+        }
+
+        .person {
+            height: 110px;
+        }
+
+    }
+    
+    @media (max-width:850px){
+        .box {
+            .articles{
+                grid-template: 140px / auto auto;
+                overflow: hidden;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                grid-gap: 75px; 
             }            
         }
+        #pilh {
+            visibility: hidden;
+        }
+        .person {
+            height: 80px;
+        }
     }
-    @media (max-width:900px){
+    
+    @media (max-width:660px){
         .box {
             .articles{
                 grid-template: 140px / auto;
+                overflow: hidden;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                grid-gap: 70px; 
             }            
         }
+        #pilh {
+            visibility: hidden;
+        }
+        .person {
+            height: 80px;
+        }
     }
+
 
 
     #pilh {
