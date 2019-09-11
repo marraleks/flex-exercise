@@ -118,14 +118,24 @@ header {
     width: 100vw;
     background-size: cover;
     background-position: center;
-    display: grid;
-    overflow: hidden;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+   
 
     img{
-        height: 100%;
+        width: 50%;
+        transform: scale(1.5);
+    }
+    .left{
+        z-index: 2;
+    }
+    .right{
+        z-index: 1;
     }
 }
+
+
 
 
 //Del 3 - Mat og verktøy

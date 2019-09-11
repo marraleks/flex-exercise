@@ -100,12 +100,19 @@ header #tilbake {
   width: 100vw;
   background-size: cover;
   background-position: center;
-  display: grid;
-  overflow: hidden;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 .artikkel2 img {
-  height: 100%;
+  width: 50%;
+  transform: scale(1.5);
+}
+.artikkel2 .left {
+  z-index: 2;
+}
+.artikkel2 .right {
+  z-index: 1;
 }
 
 .artikkel3 {
