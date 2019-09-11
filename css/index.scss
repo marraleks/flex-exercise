@@ -60,7 +60,7 @@ header {
     overflow: hidden;
     z-index: 2;
     transition: 0.5s;
-    
+
 
     .burger-nav {
         max-height: 10vh;
@@ -140,10 +140,10 @@ header {
         }
     }
 
-    @media (max-width:1000px) {
+    @media (max-width:850px) {
         .box {
             .articles {
-                max-width: 55vw;
+                max-width: 65vw;
                 grid-template-columns: 1fr 1fr;
 
                 div {
@@ -157,13 +157,17 @@ header {
         }
     }
 
-    @media (max-width:600px) {
+    @media (max-width:750px) {
         .box {
+            margin-top: 6.5vh;
+
             .articles {
-                max-width: 70vw;
+                padding-top: 70px;
+                max-width: 65vw;
                 grid-template-columns: 1fr;
 
                 div {
+
 
                     &:nth-child(2),
                     &:nth-child(3),
@@ -175,12 +179,59 @@ header {
                 }
             }
         }
-        
+
         #pilh {
             display: none;
-}
+        }
 
     }
+
+    @media (max-width:500px) {
+        .box {
+
+            .articles {
+
+                max-width: 80vw;
+                grid-template-columns: 1fr;
+
+                div {
+
+
+                    &:nth-child(4),
+                    &:nth-child(5),
+                    &:nth-child(6) {
+                        display: none;
+
+                        .person {
+                            width: 50%;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        #pilh {
+            display: none;
+        }
+
+
+        .overlay-footer {
+            width: 80vw;
+            min-height: 10vh;
+            max-height: 10vh;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+    }
+
+
+
 
     .overlay-footer {
         width: 80vw;
@@ -237,6 +288,7 @@ header {
     position: fixed;
     z-index: 2;
     top: 0;
+    
 }
 
 
@@ -381,6 +433,33 @@ main {
         .item {
             width: 100vw;
         }
+    
+        h2 {
+            font-family: $default-header-family;
+            font-weight: 800;
+            font-size: 35px;
+            padding-top: 100px;
+            text-align: left;
+        }
+    
+        p {
+            font-weight: 200;
+            font-size: 15px;
+            padding-top: 50px;
+            text-align: left;
+        }
+    
+        a {
+            color: $default-font-color;
+            text-decoration: none;
+            font-weight: 500;
+            font-family: $default-header-family;
+            padding: 90px;
+            padding-top: 15px;
+            display: inline-block;
+            padding-left: 35%;
+        }
+    
     }
 
     .former-articles {
@@ -392,6 +471,7 @@ main {
         .former {
             height: 30vh;
             padding-top: 50px;
+            margin-top: 20vh;
             background-size: cover;
             background-position: center;
             color: $default-font-color;
@@ -401,24 +481,117 @@ main {
             font-family: $default-header-family;
             font-weight: 800;
             font-size: 20px;
+            padding-top: 135px;
+            
         }
 
         p {
             font-family: $default-font-family;
             font-weight: 200;
             font-size: 10px;
+            padding-top: 10px;
         }
+
 
         a {
             display: none;
         }
 
+
         .former:nth-child(odd) {
-            padding: 100px 50px 0px 50vw;
+            padding: 100px 50px 0px 0vw;
         }
 
         .former:nth-child(even) {
-            padding: 100px 50vw 0px 100px;
+            padding: 100px 0vw 0px 0px;
+        }
+
+    }
+
+}
+
+@media (max-width:500px) {
+    .logo {
+        display: none;
+    }
+
+    main {
+        width: 300vw;
+
+        .item {
+            width: 100vw;
+        }
+    
+        h2 {
+            font-family: $default-header-family;
+            font-weight: 800;
+            font-size: 35px;
+            padding-top: 100px;
+            text-align: left;
+        }
+    
+        p {
+            font-weight: 200;
+            font-size: 15px;
+            padding-top: 50px;
+            text-align: left;
+        }
+    
+        a {
+            color: $default-font-color;
+            text-decoration: none;
+            font-weight: 500;
+            font-family: $default-header-family;
+            padding: 90px;
+            padding-top: 15px;
+            display: inline-block;
+            padding-left: 35%;
+        }
+    
+    }
+
+    .former-articles {
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 20px;
+        padding-left: 20px;
+
+        .former {
+            height: 30vh;
+            padding-top: 50px;
+            margin-top: 20vh;
+            background-size: cover;
+            background-position: center;
+            color: $default-font-color;
+        }
+
+        h3 {
+            font-family: $default-header-family;
+            font-weight: 800;
+            font-size: 20px;
+            padding-top: 135px;
+            
+        }
+
+        p {
+            font-family: $default-font-family;
+            font-weight: 200;
+            font-size: 10px;
+            padding-top: 10px;
+        }
+
+
+        a {
+            display: none;
+        }
+
+
+        .former:nth-child(odd) {
+            padding: 100px 50px 0px 0vw;
+        }
+
+        .former:nth-child(even) {
+            padding: 100px 0vw 0px 0px;
         }
 
     }

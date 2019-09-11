@@ -114,18 +114,22 @@ header #knapp.visible {
 .overlay-menu .box .articles div .person {
   width: 100%;
 }
-@media (max-width: 1000px) {
+@media (max-width: 850px) {
   .overlay-menu .box .articles {
-    max-width: 55vw;
+    max-width: 65vw;
     grid-template-columns: 1fr 1fr;
   }
   .overlay-menu .box .articles div:nth-child(5), .overlay-menu .box .articles div:nth-child(6) {
     display: none;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 750px) {
+  .overlay-menu .box {
+    margin-top: 6.5vh;
+  }
   .overlay-menu .box .articles {
-    max-width: 70vw;
+    padding-top: 70px;
+    max-width: 65vw;
     grid-template-columns: 1fr;
   }
   .overlay-menu .box .articles div:nth-child(2), .overlay-menu .box .articles div:nth-child(3), .overlay-menu .box .articles div:nth-child(4), .overlay-menu .box .articles div:nth-child(5), .overlay-menu .box .articles div:nth-child(6) {
@@ -133,6 +137,31 @@ header #knapp.visible {
   }
   .overlay-menu #pilh {
     display: none;
+  }
+}
+@media (max-width: 500px) {
+  .overlay-menu .box .articles {
+    max-width: 80vw;
+    grid-template-columns: 1fr;
+  }
+  .overlay-menu .box .articles div:nth-child(4), .overlay-menu .box .articles div:nth-child(5), .overlay-menu .box .articles div:nth-child(6) {
+    display: none;
+  }
+  .overlay-menu .box .articles div:nth-child(4) .person, .overlay-menu .box .articles div:nth-child(5) .person, .overlay-menu .box .articles div:nth-child(6) .person {
+    width: 50%;
+  }
+  .overlay-menu #pilh {
+    display: none;
+  }
+  .overlay-menu .overlay-footer {
+    width: 80vw;
+    min-height: 10vh;
+    max-height: 10vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 .overlay-menu .overlay-footer {
@@ -300,6 +329,29 @@ main .item3 {
   main .item {
     width: 100vw;
   }
+  main h2 {
+    font-family: "montserrat";
+    font-weight: 800;
+    font-size: 35px;
+    padding-top: 100px;
+    text-align: left;
+  }
+  main p {
+    font-weight: 200;
+    font-size: 15px;
+    padding-top: 50px;
+    text-align: left;
+  }
+  main a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "montserrat";
+    padding: 90px;
+    padding-top: 15px;
+    display: inline-block;
+    padding-left: 35%;
+  }
 
   .former-articles {
     display: flex;
@@ -310,6 +362,7 @@ main .item3 {
   .former-articles .former {
     height: 30vh;
     padding-top: 50px;
+    margin-top: 20vh;
     background-size: cover;
     background-position: center;
     color: #f2f2f2;
@@ -318,20 +371,93 @@ main .item3 {
     font-family: "montserrat";
     font-weight: 800;
     font-size: 20px;
+    padding-top: 135px;
   }
   .former-articles p {
     font-family: "lft-etica", sans-serif;
     font-weight: 200;
     font-size: 10px;
+    padding-top: 10px;
   }
   .former-articles a {
     display: none;
   }
   .former-articles .former:nth-child(odd) {
-    padding: 100px 50px 0px 50vw;
+    padding: 100px 50px 0px 0vw;
   }
   .former-articles .former:nth-child(even) {
-    padding: 100px 50vw 0px 100px;
+    padding: 100px 0vw 0px 0px;
+  }
+}
+@media (max-width: 500px) {
+  .logo {
+    display: none;
+  }
+
+  main {
+    width: 300vw;
+  }
+  main .item {
+    width: 100vw;
+  }
+  main h2 {
+    font-family: "montserrat";
+    font-weight: 800;
+    font-size: 35px;
+    padding-top: 100px;
+    text-align: left;
+  }
+  main p {
+    font-weight: 200;
+    font-size: 15px;
+    padding-top: 50px;
+    text-align: left;
+  }
+  main a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "montserrat";
+    padding: 90px;
+    padding-top: 15px;
+    display: inline-block;
+    padding-left: 35%;
+  }
+
+  .former-articles {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .former-articles .former {
+    height: 30vh;
+    padding-top: 50px;
+    margin-top: 20vh;
+    background-size: cover;
+    background-position: center;
+    color: #f2f2f2;
+  }
+  .former-articles h3 {
+    font-family: "montserrat";
+    font-weight: 800;
+    font-size: 20px;
+    padding-top: 135px;
+  }
+  .former-articles p {
+    font-family: "lft-etica", sans-serif;
+    font-weight: 200;
+    font-size: 10px;
+    padding-top: 10px;
+  }
+  .former-articles a {
+    display: none;
+  }
+  .former-articles .former:nth-child(odd) {
+    padding: 100px 50px 0px 0vw;
+  }
+  .former-articles .former:nth-child(even) {
+    padding: 100px 0vw 0px 0px;
   }
 }
 
