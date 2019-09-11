@@ -114,16 +114,14 @@ header {
     background-image: url("../src/img/AronRalston/Bakgrunn.jpg");
     height: 100vh;
     width: 100vw;
-    background-size: cover;
+    background-size: auto;
     background-position: center top;
-    display: flex;
-
-    .left {
-        width: 20vw;
-    }
-
-    .right {
-        width: 20vw;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    img{
+        width:100%;
     }
 }
 

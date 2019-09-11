@@ -97,15 +97,15 @@ header #tilbake {
   background-image: url("../src/img/AronRalston/Bakgrunn.jpg");
   height: 100vh;
   width: 100vw;
-  background-size: cover;
+  background-size: auto;
   background-position: center top;
-  display: flex;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
 }
-.artikkel2 .left {
-  width: 20vw;
-}
-.artikkel2 .right {
-  width: 20vw;
+.artikkel2 img {
+  width: 100%;
 }
 
 .artikkel3 {
