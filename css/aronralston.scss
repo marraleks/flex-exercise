@@ -1,9 +1,10 @@
 @import url("https://use.typekit.net/wgt3qdl.css");
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800&display=swap');
 
-$default-font-family: 'lft-etica',
-sans-serif;
+$default-font-family: 'lft-etica',sans-serif;
 $default-header-family: 'montserrat';
+$default-p-size: 18px;
+$default-header-size: 50px;
 
 * {
     margin: 0;
@@ -94,17 +95,18 @@ header {
     }
 
     .tekst {
-        margin-top: 200px;
+        margin-top: 150px;
 
         h1 {
-            font-size: 40px;
+            font-size: 50px;
             color: #2C2C2C;
             margin-left: -100px;
         }
 
         p {
             font-weight: 300;
-            padding: 50px;
+            padding: 100px;
+            font-size: $default-p-size;
         }
     }
 }
@@ -114,12 +116,12 @@ header {
     background-image: url("../src/img/AronRalston/Bakgrunn.jpg");
     height: 100vh;
     width: 100vw;
-    background-size: auto;
-    background-position: center top;
+    background-size: cover;
+    background-position: center;
     display: grid;
     overflow: hidden;
     grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
+
     img{
         width:100%;
     }
@@ -137,8 +139,8 @@ header {
         margin-right: 40px;
         text-align: left;
         h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 50px;
+            font-family: $default-header-family;
+            font-size: $default-header-size;
             color: #2C2C2C;
             margin-left: 100px;
             padding-bottom: 50px;
@@ -148,6 +150,7 @@ header {
             font-weight: 300;
             display: flex;
             margin-left: 120px;
+            font-size: 18px;
         }
       } 
     }
@@ -177,42 +180,44 @@ header {
 
 
 
-.artikkel35 {
-height: 100vh;
-width: 100vw;
-display: flex;
-.tekst2 {
-    margin-top:100px;
-    margin-left: 40px;
-    margin-right: 40px;
-    text-align: left;
-
-    h1{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 50px;
-        color: #2C2C2C;
-        padding-top: 100px;
-        padding-left: 200px;
-    }
-    p{
-        font-family: 'lft-etica';
-        font-weight: 300;
+    .artikkel35 {
+        height: 100vh;
+        width: 100vw;
         display: flex;
-        margin-left: 120px;
-        padding-top: 60px;
-        padding-right: 60px;
+        .container {
+            min-width: 50vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .tekst1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-left: 100px;
+            h1 {
+                font-family: $default-header-family;
+                font-size: $default-header-size;
+                color: #2C2C2C;
+                align-self: flex-end;
+                padding-bottom: 50px;
+                padding-right: 50px;
+            }
+            p {
+                font-size: $default-p-size;
+                color: #2c2c2c;
+                font-weight: 300;
+                padding-bottom: 50px;
+                padding-right: 30px;
+            }
+            audio {
+                margin-right: 30px;
+            }
+        }
     }
-}
-.inriss {
-    min-width: 50vw;
-    height: 50vh;
-    margin-top: 150px;
-    background-image: url("../src/img/AronRalston/inrissing.png");
-    background-repeat: no-repeat;
-    background-size: cover;  
-    margin-right: 40px;
-}
-}
 
 
 // Nattartikkel
@@ -236,6 +241,7 @@ display: flex;
         align-items: center;
 
         p {
+            font-size: $default-p-size;
             color: #f2f2f2;
             font-weight: 300;
             padding: 100px;
@@ -287,15 +293,26 @@ display: flex;
         }
 
         h1 {
-            font-size: 40px;
+            font-size: $default-header-size;
             color: #2C2C2C;
         }
 
         p {
+            font-size: $default-p-size;
             width: 300px;
             font-weight: 300;
             padding-right: 50px;
             padding-top: 50px;
         }
+    }
+}
+
+
+
+.artikkel6 {
+    width: 100vw;
+    height: 100vh;
+    .iframe {
+        align-content: center;
     }
 }
