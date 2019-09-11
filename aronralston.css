@@ -108,6 +108,89 @@ header #tilbake {
   width: 20vw;
 }
 
+.artikkel3 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.artikkel3 .tekst {
+  margin-top: 100px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: left;
+}
+.artikkel3 .tekst h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  color: #2C2C2C;
+  margin-left: 100px;
+  padding-bottom: 50px;
+}
+.artikkel3 .tekst p {
+  font-family: "lft-etica";
+  font-weight: 300;
+  display: flex;
+  margin-left: 120px;
+}
+
+.mat {
+  min-width: 60vw;
+  height: 100vh;
+  display: flex;
+  margin-top: 40px;
+  background-image: url("./assets/ration.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 80vh;
+}
+
+.verktoy {
+  min-width: 50vw;
+  height: 100vh;
+  margin-left: 10px;
+  display: flex;
+  margin-top: 320px;
+  background-image: url("./assets/supplies.jpg");
+  background-repeat: no-repeat;
+  background-size: 70vh;
+}
+
+.artikkel35 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.artikkel35 .tekst2 {
+  margin-top: 100px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: left;
+}
+.artikkel35 .tekst2 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  color: #2C2C2C;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+.artikkel35 .tekst2 p {
+  font-family: "lft-etica";
+  font-weight: 300;
+  display: flex;
+  margin-left: 120px;
+  padding-top: 60px;
+  padding-right: 60px;
+}
+.artikkel35 .inriss {
+  min-width: 50vw;
+  height: 50vh;
+  margin-top: 150px;
+  background-image: url("./assets/inrissing.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 40px;
+}
+
 .artikkel4 {
   height: 100vh;
   width: 100vw;
