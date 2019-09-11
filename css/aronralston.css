@@ -81,28 +81,28 @@ header #tilbake {
   background-position: center top;
 }
 .artikkel1 .tekst {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 .artikkel1 .tekst h1 {
-  font-size: 40px;
+  font-size: 50px;
   color: #2C2C2C;
   margin-left: -100px;
 }
 .artikkel1 .tekst p {
   font-weight: 300;
-  padding: 50px;
+  padding: 100px;
+  font-size: 18px;
 }
 
 .artikkel2 {
   background-image: url("../src/img/AronRalston/Bakgrunn.jpg");
   height: 100vh;
   width: 100vw;
-  background-size: auto;
-  background-position: center top;
+  background-size: cover;
+  background-position: center;
   display: grid;
   overflow: hidden;
   grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
 }
 .artikkel2 img {
   width: 100%;
@@ -120,7 +120,7 @@ header #tilbake {
   text-align: left;
 }
 .artikkel3 .tekst h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "montserrat";
   font-size: 50px;
   color: #2C2C2C;
   margin-left: 100px;
@@ -131,6 +131,7 @@ header #tilbake {
   font-weight: 300;
   display: flex;
   margin-left: 120px;
+  font-size: 18px;
 }
 
 .mat {
@@ -160,35 +161,37 @@ header #tilbake {
   width: 100vw;
   display: flex;
 }
-.artikkel35 .tekst2 {
-  margin-top: 100px;
-  margin-left: 40px;
-  margin-right: 40px;
-  text-align: left;
+.artikkel35 .container {
+  min-width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.artikkel35 .tekst2 h1 {
-  font-family: "Montserrat", sans-serif;
+.artikkel35 .tekst1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 100px;
+}
+.artikkel35 .tekst1 h1 {
+  font-family: "montserrat";
   font-size: 50px;
   color: #2C2C2C;
-  padding-top: 100px;
-  padding-left: 200px;
+  align-self: flex-end;
+  padding-bottom: 50px;
+  padding-right: 50px;
 }
-.artikkel35 .tekst2 p {
-  font-family: "lft-etica";
+.artikkel35 .tekst1 p {
+  font-size: 18px;
+  color: #2c2c2c;
   font-weight: 300;
-  display: flex;
-  margin-left: 120px;
-  padding-top: 60px;
-  padding-right: 60px;
+  padding-bottom: 50px;
+  padding-right: 30px;
 }
-.artikkel35 .inriss {
-  min-width: 50vw;
-  height: 50vh;
-  margin-top: 150px;
-  background-image: url("../src/img/AronRalston/inrissing.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-right: 40px;
+.artikkel35 .tekst1 audio {
+  margin-right: 30px;
 }
 
 .artikkel4 {
@@ -210,6 +213,7 @@ header #tilbake {
   align-items: center;
 }
 .artikkel4 .tekst1 p {
+  font-size: 18px;
   color: #f2f2f2;
   font-weight: 300;
   padding: 100px;
@@ -254,10 +258,11 @@ header #tilbake {
   display: flex;
 }
 .artikkel5 .tekst h1 {
-  font-size: 40px;
+  font-size: 50px;
   color: #2C2C2C;
 }
 .artikkel5 .tekst p {
+  font-size: 18px;
   width: 300px;
   font-weight: 300;
   padding-right: 50px;
