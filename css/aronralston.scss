@@ -35,7 +35,7 @@ header {
     #misc {
         height: 30px;
         width: 20px;
-        background-image: url("./assets/misc.png");
+        background-image: url("../src/assets/ikoner/misc.png");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -46,7 +46,7 @@ header {
     #tilbake {
         height: 30px;
         width: 20px;
-        background-image: url("./assets/pilv.png");
+        background-image: url("../src/assets/ikoner/pilv.png");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -80,7 +80,7 @@ header {
         min-width: 50vw;
         height: 100vh;
         display: flex;
-        background-image: url("./src/aronbilder/orken.png");
+        background-image: url("../src/img/AronRalston/orken.png");
         justify-content: center;
         align-items: center;
     }
@@ -88,7 +88,7 @@ header {
     .aronportrett {
         height: 80vh;
         width: 25vw;
-        background-image: url("./src/aronbilder/Enarm.png");
+        background-image: url("../src/img/AronRalston/Enarm.png");
         background-size: cover;
         background-position: center top;
     }
@@ -111,7 +111,7 @@ header {
 
 // Fjellvegg som åpner seg
 .artikkel2 {
-    background-image: url("./src/aronbilder/Bakgrunn.jpg");
+    background-image: url("../src/img/AronRalston/Bakgrunn.jpg");
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -158,7 +158,7 @@ header {
       height: 100vh;
       display: flex;
       margin-top: 40px;
-      background-image: url("./assets/ration.jpg");
+      background-image: url("../src/img/AronRalston/ration.jpg");
       background-repeat: no-repeat;
       background-position: top;
       background-size: 80vh;     
@@ -170,7 +170,7 @@ header {
         margin-left: 10px;
         display: flex;
         margin-top: 320px;
-        background-image: url("./assets/supplies.jpg");
+        background-image: url("../src/img/AronRalston/supplies.jpg");
         background-repeat: no-repeat;
         background-size: 70vh;  
     }
@@ -209,7 +209,7 @@ display: flex;
     min-width: 50vw;
     height: 50vh;
     margin-top: 150px;
-    background-image: url("./assets/inrissing.png");
+    background-image: url("../src/img/AronRalston/inrissing.png");
     background-repeat: no-repeat;
     background-size: cover;  
     margin-right: 40px;
@@ -222,7 +222,7 @@ display: flex;
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-image: url("./src/aronbilder/Nattbilde.png");
+    background-image: url("../src/img/AronRalston/Nattbilde.png");
     background-size: cover;
 
     .container {
@@ -258,7 +258,7 @@ display: flex;
         height: 100vh;
 
         .bloodrock {
-            background-image: url("./src/aronbilder/BloodRock.png");
+            background-image: url("../src/img/AronRalston/BloodRock.png");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -270,7 +270,7 @@ display: flex;
         }
 
         .trapped {
-            background-image: url("./src/aronbilder/trapped.png");
+            background-image: url("../src/img/AronRalston/Trapped.png");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;

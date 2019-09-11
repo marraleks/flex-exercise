@@ -23,7 +23,7 @@ header {
 header #knapp {
   height: 30px;
   width: 20px;
-  background-image: url("./assets/misc.png");
+  background-image: url("../src/assets/ikoner/misc.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -32,7 +32,7 @@ header #knapp {
 header #knapp.visible {
   height: 25px;
   width: 20px;
-  background-image: url("./assets/X-.png");
+  background-image: url("../src/assets/ikoner/X-.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -158,7 +158,7 @@ header #knapp.visible {
 
 #pilh {
   display: block;
-  background-image: url("./assets/pilh.png");
+  background-image: url("../src/assets/ikoner/pilh.png");
   position: relative;
   height: 40px;
   width: 20px;
@@ -217,13 +217,13 @@ main a {
   display: inline-block;
 }
 main .item1 {
-  background-image: url("./src/nyeste/riktigformat_Aron.jpg");
+  background-image: url("../src/img/nyeste/riktigformat_Aron.jpg");
 }
 main .item2 {
-  background-image: url("./src/nyeste/riktig_format.jpg");
+  background-image: url("../src/img/nyeste/riktig_format.jpg");
 }
 main .item3 {
-  background-image: url("./src/nyeste/rikgitfarmat.dude.jpg");
+  background-image: url("../src/img/nyeste/rikgitfarmat.dude.jpg");
 }
 
 .header-menu {
@@ -268,19 +268,19 @@ main .item3 {
   display: inline-block;
 }
 .former-articles .article1 {
-  background-image: url("./src/eldreartikler/DavidGoggins.png");
+  background-image: url("../src/img/eldreartikler/DavidGoggins.png");
 }
 .former-articles .article2 {
-  background-image: url("./src/eldreartikler/GirlInTheBox.png");
+  background-image: url("../src/img/eldreartikler/GirlInTheBox.png");
 }
 .former-articles .article3 {
-  background-image: url("./src/eldreartikler/SheryllPowell.png");
+  background-image: url("../src/img/eldreartikler/SheryllPowell.png");
 }
 .former-articles .article4 {
-  background-image: url("./src/eldreartikler/MaryBrunner.png");
+  background-image: url("../src/img/eldreartikler/MaryBrunner.png");
 }
 .former-articles .article5 {
-  background-image: url("./src/eldreartikler/Harrison.png");
+  background-image: url("../src/img/eldreartikler/Harrison.png");
 }
 
 @media (max-width: 900px) {
