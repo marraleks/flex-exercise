@@ -45,7 +45,7 @@ header #knapp.visible {
   position: fixed;
   z-index: 2;
   transition: 0.5s;
-  top: -300vw;
+  top: -100vw;
 }
 .overlay-menu .burger-nav {
   width: 80vw;
