@@ -264,4 +264,12 @@ header #tilbake {
   padding-top: 50px;
 }
 
+.artikkel6 {
+  width: 100vw;
+  height: 100vh;
+}
+.artikkel6 .iframe {
+  align-content: center;
+}
+
 /*# sourceMappingURL=aronralston.css.map */
