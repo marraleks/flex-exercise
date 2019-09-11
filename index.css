@@ -39,17 +39,18 @@ header #knapp.visible {
 }
 
 .overlay-menu {
-  height: 100vh;
   width: 100vw;
   background-color: #2C2C2C;
   position: fixed;
+  max-height: 100vh;
+  top: -100vh;
+  overflow: hidden;
   z-index: 2;
   transition: 0.5s;
-  top: -300vw;
 }
 .overlay-menu .burger-nav {
+  max-height: 10vh;
   width: 80vw;
-  height: 10vh;
   margin: 0 auto;
   margin-top: 0;
   margin-bottom: 0;
@@ -83,103 +84,63 @@ header #knapp.visible {
 }
 .overlay-menu .box {
   background-color: #201F1F;
+  min-height: 60vh;
 }
 .overlay-menu .box .articles {
   width: 80vw;
-  max-height: 70vh;
   margin: auto;
   color: #f2f2f2;
   padding-top: 50px;
   padding-bottom: 50px;
   justify-content: center;
   display: grid;
-  grid-template: 140px/auto auto auto;
-  grid-gap: 95px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-@media (max-width: 1300px) {
-  .overlay-menu .box .articles {
-    grid-template: 140px/auto auto auto;
-    overflow: hidden;
-    grid-gap: 85px;
-  }
-  .overlay-menu .box .person {
-    height: 120px;
-  }
+.overlay-menu .box .articles div {
+  padding: 20px;
+}
+.overlay-menu .box .articles div h4 {
+  font-size: 14px;
+  color: #f2f2f2;
+  font-family: "montserrat";
+  font-weight: 800;
+}
+.overlay-menu .box .articles div p {
+  font-size: 12;
+  color: #f2f2f2;
+  font-family: "lft-etica", sans-serif;
+  font-weight: 300;
+}
+.overlay-menu .box .articles div .person {
+  width: 100%;
 }
 @media (max-width: 1000px) {
   .overlay-menu .box .articles {
-    grid-template: 140px/auto auto;
-    overflow: hidden;
-    grid-gap: 80px;
+    max-width: 55vw;
+    grid-template-columns: 1fr 1fr;
   }
-  .overlay-menu .person {
-    height: 110px;
+  .overlay-menu .box .articles div:nth-child(5), .overlay-menu .box .articles div:nth-child(6) {
+    display: none;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 600px) {
   .overlay-menu .box .articles {
-    grid-template: 140px/auto auto;
-    overflow: hidden;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    grid-gap: 75px;
+    max-width: 55vw;
+    grid-template-columns: 1fr;
   }
-  .overlay-menu #pilh {
-    visibility: hidden;
+  .overlay-menu .box .articles div:nth-child(2), .overlay-menu .box .articles div:nth-child(3), .overlay-menu .box .articles div:nth-child(4), .overlay-menu .box .articles div:nth-child(5), .overlay-menu .box .articles div:nth-child(6) {
+    display: none;
   }
-  .overlay-menu .person {
-    height: 80px;
-  }
-}
-@media (max-width: 660px) {
-  .overlay-menu .box .articles {
-    grid-template: 140px/auto;
-    overflow: hidden;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    grid-gap: 70px;
-  }
-  .overlay-menu #pilh {
-    visibility: hidden;
-  }
-  .overlay-menu .person {
-    height: 80px;
-  }
-}
-.overlay-menu #pilh {
-  display: block;
-  background-image: url("./assets/pilh.png");
-  position: relative;
-  height: 40px;
-  width: 20px;
-  z-index: 15;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  left: 95vw;
-  top: 260px;
-  transform: translate(-50%);
 }
 .overlay-menu .overlay-footer {
-  display: flex;
-  flex-wrap: wrap;
-}
-.overlay-menu .overlay-footer div {
-  padding-left: 200px;
-}
-.overlay-menu h4 {
-  padding-top: 30px;
-  color: #D15827;
-  font-size: 16px;
-  padding-bottom: 10px;
-  font-weight: 500;
-}
-.overlay-menu .overlay-footer {
-  display: flex;
-  flex-wrap: wrap;
-}
-.overlay-menu .overlay-footer div {
-  padding-left: 220px;
+  width: 80vw;
+  min-height: 10vh;
+  max-height: 10vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
 }
 .overlay-menu h4 {
   padding-top: 14px;
@@ -193,92 +154,20 @@ header #knapp.visible {
   font-size: 12px;
   font-weight: 300;
 }
-.overlay-menu .person {
-  height: 150px;
-}
-.overlay-menu #david h4 {
-  font-size: 14px;
-  color: #f2f2f2;
-  font-family: "montserrat";
-  font-weight: 800;
-  margin-top: -15px;
-}
-.overlay-menu #david p {
-  font-size: 12;
-  color: #f2f2f2;
-  font-family: "lft-etica", sans-serif;
-  font-weight: 300;
-  margin-top: -5px;
-}
-.overlay-menu #boxgirl h4 {
-  font-size: 14px;
-  color: #f2f2f2;
-  font-family: "montserrat";
-  font-weight: 800;
-  margin-top: -15px;
-}
-.overlay-menu #boxgirl p {
-  font-size: 12;
-  color: #f2f2f2;
-  font-family: "lft-etica", sans-serif;
-  font-weight: 300;
-  margin-top: -5px;
-}
-.overlay-menu #harrison h4 {
-  font-size: 14px;
-  color: #f2f2f2;
-  font-family: "montserrat";
-  font-weight: 800;
-  margin-top: -15px;
-}
-.overlay-menu #harrison p {
-  font-size: 12;
-  color: #f2f2f2;
-  font-family: "lft-etica", sans-serif;
-  font-weight: 300;
-  margin-top: -5px;
-}
-.overlay-menu #mary h4 {
-  font-size: 14px;
-  color: #f2f2f2;
-  font-family: "montserrat";
-  font-weight: 800;
-  margin-top: -15px;
-}
-.overlay-menu #mary p {
-  font-size: 12;
-  color: #f2f2f2;
-  font-family: "lft-etica", sans-serif;
-  font-weight: 300;
-  margin-top: -5px;
-}
-.overlay-menu #sheryl h4 {
-  font-size: 14px;
-  color: #f2f2f2;
-  font-family: "montserrat";
-  font-weight: 800;
-  margin-top: -15px;
-}
-.overlay-menu #sheryl p {
-  font-size: 12;
-  color: #f2f2f2;
-  font-family: "lft-etica", sans-serif;
-  font-weight: 300;
-  margin-top: -5px;
-}
-.overlay-menu #jane h4 {
-  font-size: 14px;
-  color: #f2f2f2;
-  font-family: "montserrat";
-  font-weight: 800;
-  margin-top: -15px;
-}
-.overlay-menu #jane p {
-  font-size: 12;
-  color: #f2f2f2;
-  font-family: "lft-etica", sans-serif;
-  font-weight: 300;
-  margin-top: -5px;
+
+#pilh {
+  display: block;
+  background-image: url("./assets/pilh.png");
+  position: relative;
+  height: 40px;
+  width: 20px;
+  z-index: 15;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 95vw;
+  top: 260px;
+  transform: translate(-50%);
 }
 
 .overlay-menu.visible {
