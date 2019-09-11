@@ -100,12 +100,19 @@ header #tilbake {
   width: 100vw;
   background-size: cover;
   background-position: center;
-  display: grid;
+  display: flex;
+  justify-content: space-between;
   overflow: hidden;
-  grid-template-columns: 1fr 1fr;
 }
 .artikkel2 img {
-  width: 100%;
+  width: 50%;
+  transform: scale(1.5);
+}
+.artikkel2 .left {
+  z-index: 2;
+}
+.artikkel2 .right {
+  z-index: 1;
 }
 
 .artikkel3 {
@@ -150,7 +157,7 @@ header #tilbake {
   height: 100vh;
   margin-left: 10px;
   display: flex;
-  margin-top: 320px;
+  margin-top: 280px;
   background-image: url("../src/img/AronRalston/supplies.jpg");
   background-repeat: no-repeat;
   background-size: 70vh;
@@ -229,6 +236,7 @@ header #tilbake {
 .artikkel5 .container {
   min-width: 50vw;
   height: 100vh;
+  display: flex;
 }
 .artikkel5 .container .bloodrock {
   background-image: url("../src/img/AronRalston/BloodRock.png");
@@ -237,36 +245,37 @@ header #tilbake {
   background-repeat: no-repeat;
   height: 508px;
   width: 300px;
-  margin-left: 150px;
-  padding-top: 400px;
-  padding-left: 150px;
+  margin-left: 300px;
 }
 .artikkel5 .container .trapped {
   background-image: url("../src/img/AronRalston/Trapped.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 180px;
+  height: 200px;
   width: 405px;
-  margin-left: -300px;
+  margin-left: -200px;
+  margin-top: 350px;
 }
 .artikkel5 .tekst {
   margin-top: -200px;
-  margin-left: 200px;
-}
-.artikkel5 .tekst .wrap {
-  display: flex;
+  margin-left: 50px;
 }
 .artikkel5 .tekst h1 {
   font-size: 50px;
   color: #2C2C2C;
+  padding-bottom: 50px;
+  margin-left: 50px;
+}
+.artikkel5 .tekst .wrap {
+  display: flex;
+  flex-direction: row;
 }
 .artikkel5 .tekst p {
   font-size: 18px;
-  width: 300px;
   font-weight: 300;
-  padding-right: 50px;
-  padding-top: 50px;
+  margin-left: 50px;
+  width: 250px;
 }
 
 .artikkel6 {

@@ -118,14 +118,24 @@ header {
     width: 100vw;
     background-size: cover;
     background-position: center;
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     overflow: hidden;
-    grid-template-columns: 1fr 1fr;
+   
 
     img{
-        width:100%;
+        width: 50%;
+        transform: scale(1.5);
+    }
+    .left{
+        z-index: 2;
+    }
+    .right{
+        z-index: 1;
     }
 }
+
+
 
 
 //Del 3 - Mat og verktøy
@@ -170,7 +180,7 @@ header {
         height: 100vh;
         margin-left: 10px;
         display: flex;
-        margin-top: 320px;
+        margin-top: 280px;
         background-image: url("../src/img/AronRalston/supplies.jpg");
         background-repeat: no-repeat;
         background-size: 70vh;  
@@ -260,6 +270,7 @@ header {
     .container {
         min-width: 50vw;
         height: 100vh;
+        display: flex;
 
         .bloodrock {
             background-image: url("../src/img/AronRalston/BloodRock.png");
@@ -268,9 +279,7 @@ header {
             background-repeat: no-repeat;
             height: 508px;
             width: 300px;
-            margin-left: 150px;
-            padding-top: 400px;
-            padding-left: 150px;
+            margin-left: 300px;
         }
 
         .trapped {
@@ -278,31 +287,32 @@ header {
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 180px;
+            height: 200px;
             width: 405px;
-            margin-left: -300px;
+            margin-left: -200px;
+            margin-top: 350px;
         }
     }
 
     .tekst {
         margin-top: -200px;
-        margin-left: 200px;
-
-        .wrap {
-            display: flex;
-        }
-
+        margin-left: 50px;
         h1 {
             font-size: $default-header-size;
             color: #2C2C2C;
+            padding-bottom: 50px;
+            margin-left: 50px;
         }
+        .wrap {
 
+            display: flex; 
+            flex-direction: row;
+        }
         p {
             font-size: $default-p-size;
-            width: 300px;
             font-weight: 300;
-            padding-right: 50px;
-            padding-top: 50px;
+            margin-left: 50px;
+            width: 250px;
         }
     }
 }
