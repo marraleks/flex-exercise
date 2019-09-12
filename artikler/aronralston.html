@@ -11,6 +11,7 @@
 
 <body>
 
+    
     <header>
         <div class="header-menu">
             <a href="../index.html">
@@ -24,6 +25,7 @@
         </div>
         </div>
     </header>
+    
 
     <div id="info">0</div>
     <div class="artikkel artikkel1"
@@ -48,33 +50,39 @@
     <div class="artikkel artikkel2"
         data-600="transform: translateY(0vh)" 
         data-1900="transform: translateY(-100vh)"
+        data-2500="background-size: 300%;"
+        data-5000="background-size: 100%;"
 >
-        <!--  
-        <div class="gardin left"></div>
-        <div class="gardin right"></div>
-        -->
-        <!-- 
-        <img class="left" src="../src/img/AronRalston/Lag0.png" alt=""
-            data-800="transform: translateX(0px) scale(1)" 
-            data-1000="transform: translateX(-500px) scale(1.5)"
-        >  
-     -->
 
+<div class="skyggeboks"
+    data-3400="background-color: rgba(0, 0, 0, 0);"
+    data-5000="background-color: rgba(0, 0, 0, 0.5);">
+</div>
         <img class="left" 
-        src="../src/img/AronRalston/Lag1.png" alt=""
-            data-1900="transform: translateY(0vh;" 
-            data-2500="transform: translateY(-100vh);">  
-        <img class="right" src="../src/img/AronRalston/Lag3.png" alt=""
-            data-1900="transform: translateY(0vh)" 
-            data-2500="transform: translateY(-100vh)">
+        src="../src/img/AronRalston/Lag0.png" alt=""
+            data-1900="transform: translateY(0vh) scale(1); left:0vw;"
+            data-2500="transform: translateY(-50vh) scale(1); left:0vw;"
+            data-7000="transform: translateY(-150vh) scale(0.1); left:-100vw;"
+            >  
+        <img class="right" src="../src/img/AronRalston/Lag2.png" alt=""
+            data-1900="transform: translateY(0vh) scale(1); right:0vw"
+            data-2500="transform: translateY(-50vh) scale(1); right:0vw"
+            data-7000="transform: translateY(-150vh) scale(0); right:-100vw"
+            >
            
-            <div class="funke">        
+            <div class="grottetekst"
+            data-3400="top: 100vh; opacity:0"
+            data-5000="top: 40vh; opacity:1"
+            >        
                     <p>At around 2:45 p.m., as he descended into the canyon, a giant rock above him slipped. Ralston fell and his
                     right hand became lodged between the canyon wall and the 800-pound boulder, leaving him trapped 100 feet
                     below the desert surface and 20 miles from the nearest paved road.
                     </p>
             </div>  
 </div>
+
+
+
 
 
 <!--Del tre - mat og verktøy-->
@@ -126,7 +134,7 @@
             </p>
         </div>
     </div>
-
+    
     <div class="artikkel artikkel5">
 
         <div class="tekst">
@@ -166,7 +174,7 @@
     </script>
     <script src="../js/skrollr.js"></script>
 
-
+    
 
     <script>
         var s = skrollr.init({

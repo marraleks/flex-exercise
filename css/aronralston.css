@@ -23,7 +23,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 10;
+  z-index: 200;
 }
 header #misc {
   height: 30px;
@@ -56,10 +56,6 @@ header #tilbake {
   z-index: 9999;
 }
 
-.artikkel {
-  margin-bottom: 100px;
-}
-
 .artikkel1 {
   height: 100vh;
   width: 100vw;
@@ -83,6 +79,7 @@ header #tilbake {
 }
 .artikkel1 .tekst {
   margin-top: 150px;
+  z-index: 103;
 }
 .artikkel1 .tekst h1 {
   font-size: 50px;
@@ -108,16 +105,35 @@ header #tilbake {
 }
 .artikkel2 .left {
   z-index: 2;
-  width: 60%;
+  width: 101%;
   height: 260vh;
   position: fixed;
+  left: 0vw;
+  z-index: 102;
 }
 .artikkel2 .right {
   z-index: 1;
-  width: 60%;
+  width: 101%;
   height: 260vh;
   position: fixed;
   right: 0vw;
+  z-index: 101;
+}
+.artikkel2 .grottetekst {
+  margin: auto;
+  margin-left: 29%;
+  margin-right: 29%;
+  padding: 25px;
+  position: absolute;
+  top: 100vh;
+  z-index: 105;
+}
+.artikkel2 .grottetekst p {
+  font-family: 18px;
+  font-weight: 300;
+  font-size: 22px;
+  color: #f2f2f2;
+  text-align: center;
 }
 
 .artikkel3 {
@@ -299,6 +315,14 @@ header #tilbake {
 }
 .artikkel6 .iframe {
   align-content: center;
+}
+
+.skyggeboks {
+  background-color: rgba(0, 0, 0, 0);
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  position: fixed;
 }
 
 /*# sourceMappingURL=aronralston.css.map */
