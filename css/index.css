@@ -348,7 +348,7 @@ main .item3 {
     flex-wrap: wrap;
   }
   main .item {
-    height: 100vh;
+    min-height: 100vh;
     width: 300px;
     flex-grow: 1;
     background-size: cover;
@@ -381,7 +381,7 @@ main .item3 {
     flex-wrap: wrap;
   }
   main .item {
-    height: 100vh;
+    min-height: 100vh;
     width: 300px;
     flex-grow: 1;
     background-size: cover;
@@ -695,10 +695,14 @@ main .item3 {
   }
 
   main {
-    width: 300vw;
+    max-width: 100vw;
+    overflow: hidden;
+    flex-wrap: nowrap;
   }
   main .item {
-    width: 100vw;
+    min-width: 100vw;
+    min-height: 120vh;
+    max-height: auto;
   }
   main h2 {
     font-family: "montserrat";
