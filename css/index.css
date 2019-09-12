@@ -89,6 +89,7 @@ header #knapp.visible {
   background-color: #201F1F;
   border: 1px solid #2C2C2C;
   border-radius: 4px;
+  color: #f2f2f2;
 }
 .overlay-menu .burger-nav .search .lupen {
   margin-top: 4px;
@@ -200,6 +201,7 @@ header #knapp.visible {
     background-color: #201F1F;
     border: 1px solid #2C2C2C;
     border-radius: 4px;
+    color: #f2f2f2;
   }
   .overlay-menu .search .lupen {
     margin-top: 4px;
