@@ -64,6 +64,7 @@ header #tilbake {
   height: 100vh;
   width: 100vw;
   display: flex;
+  position: fixed;
 }
 .artikkel1 .orken {
   min-width: 50vw;
@@ -99,26 +100,32 @@ header #tilbake {
   height: 100vh;
   width: 100vw;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   display: flex;
-  justify-content: space-between;
   overflow: hidden;
-}
-.artikkel2 img {
-  width: 50%;
-  transform: scale(1.5);
+  position: fixed;
+  top: 100vh;
 }
 .artikkel2 .left {
   z-index: 2;
+  width: 60%;
+  height: 260vh;
+  position: fixed;
 }
 .artikkel2 .right {
   z-index: 1;
+  width: 60%;
+  height: 260vh;
+  position: fixed;
+  right: 0vw;
 }
 
 .artikkel3 {
   height: 100vh;
   width: 100vw;
   display: flex;
+  position: fixed;
+  top: 100vh;
 }
 .artikkel3 .tekst {
   margin-top: 100px;
@@ -167,6 +174,8 @@ header #tilbake {
   height: 100vh;
   width: 100vw;
   display: flex;
+  position: fixed;
+  top: 100vh;
 }
 .artikkel35 .container {
   min-width: 50vw;
@@ -207,6 +216,8 @@ header #tilbake {
   display: flex;
   background-image: url("../src/img/AronRalston/Nattbilde.png");
   background-size: cover;
+  position: fixed;
+  top: 100vh;
 }
 .artikkel4 .container {
   min-width: 50vw;
@@ -232,6 +243,8 @@ header #tilbake {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 100vh;
 }
 .artikkel5 .container {
   min-width: 50vw;
@@ -281,6 +294,8 @@ header #tilbake {
 .artikkel6 {
   width: 100vw;
   height: 100vh;
+  position: fixed;
+  top: 100vh;
 }
 .artikkel6 .iframe {
   align-content: center;
