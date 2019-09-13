@@ -25,26 +25,57 @@ body {
 }
 
 
+#pilh {
+    display: block;
+    background-image: url("../src/assets/ikoner/pilh.png");
+    position: absolute;
+    height: 40px;
+    width: 20px;
+    z-index: 15;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 95vw;
+    top: 300px;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+@mixin search {
+    .search {
+        display: grid;
+        grid-template-columns: 200px 40px;
+        align-items: center;
+
+        input {
+            margin-top: 9px;
+            height: 32px;
+            background-color: #201F1F;
+            border: 1px solid #2C2C2C;
+            border-radius: 4px;
+            color: #f2f2f2;
+        }
+
+        .lupen {
+            margin-top: 4px;
+            position: inline-block;
+            height: 20px;
+            margin-left: -14px;
+        }
+    }
+}
+
+
 
 header {
-    height: 10vh;
+    min-height: 80px;
     display: flex;
     width: 100vw;
     justify-content: space-between;
+    padding: 20px;
     align-items: center;
     position: fixed;
-    z-index: 9998;
-
-    #misc {
-        height: 30px;
-        width: 20px;
-        background-image: url("../src/assets/ikoner/misc.png");
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin-top: 30px;
-        margin-right: 30px;
-    }
+    z-index: 9990;
 
     #tilbake {
         height: 30px;
@@ -53,9 +84,233 @@ header {
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-        margin-top: 30px;
-        margin-left: 30px;
+        cursor: pointer;
     }
+    #tilbake.visible {
+        width: 0;
+    }
+
+
+
+    #knapp {
+        height: 30px;
+        width: 20px;
+        background-image: url("../src/assets/ikoner/misc.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    #knapp.visible {
+        height: 30px;
+        width: 20px;
+        background-image: url("../src/assets/ikoner/X-.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+.overlay-menu {
+    width: 100vw;
+    background-color: #2C2C2C;
+    position: fixed;
+    max-height: 100vh;
+    top: -100vh;
+    overflow: hidden;
+    z-index: 2;
+    transition: 0.5s;
+
+
+
+    .burger-nav {
+        min-height: 80px;
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo-menu {
+            height: 50px;
+            img {
+                height: 100%;
+            }
+        }
+
+        @include search;
+
+    }
+
+    .box {
+        background-color: #201F1F;
+        min-height: 40vh;
+
+        .articles {
+            width: 80vw;
+            margin: auto;
+            color: #f2f2f2;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            div {
+                padding: 20px;
+
+                h4 {
+                    font-size: 14px;
+                    color: #f2f2f2;
+                    font-size: 14px;
+                    font-family: $default-header-family;
+                    font-weight: 800;
+                }
+
+                p {
+                    font-size: 12px;
+                    color: #f2f2f2;
+                    font-family: $default-font-family;
+                    font-weight: 300;
+                }
+
+                .person {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #search2 {
+        display: none;
+    }
+
+    .overlay-footer {
+        width: 80vw;
+        min-height: 10vh;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        align-items: center;
+        .item{
+            padding-top:10px;
+        }
+
+        h4 {
+            padding-top: 14px;
+            color: #D15827;
+            font-size: 14px;
+            padding-bottom: 10px;
+            font-weight: 500;
+
+        }
+
+        p {
+            color: #D15827;
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+    }
+
+
+    // RESPONSIVT 
+
+
+    @media (max-width:850px) {
+        .box {
+            .articles {
+                max-width: 65vw;
+                grid-template-columns: 1fr 1fr;
+
+                div {
+
+                    &:nth-child(5),
+                    &:nth-child(6) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:750px) {
+        .burger-nav {
+            display: none;
+        }
+
+        .box {
+
+            .articles {
+                padding-top: 70px;
+                max-width: 65vw;
+                grid-template-columns: 1fr;
+
+                div {
+
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:nth-child(4),
+                    &:nth-child(5),
+                    &:nth-child(6) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .overlay-footer {
+            grid-template-columns: auto;
+        }
+
+        #pilh {
+            display: none;
+        }
+
+        #search2 {
+            display: grid;
+            justify-content: space-between;
+            width: 80vw;
+            margin: auto;
+        }
+
+        @include search;
+
+        .search input {
+            width: 80vw;
+        }
+
+        .search .lupen {
+            margin: 4px 0;
+            padding: 0px;
+        }
+    }
+
+    @media (max-width:500px) {
+        .overlay-menu 
+        .box{
+            margin-top:0px;
+        }
+        .overlay-footer {
+            grid-template-columns: 1fr;
+        }
+    }
+
+}
+
+.overlay-menu.visible {
+    height: 100vh;
+    background-color: #2C2C2C;
+    position: fixed;
+    z-index: 9989;
+    top: 0;
+
 }
 
 #info {

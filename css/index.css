@@ -24,6 +24,7 @@ body {
   left: 95vw;
   top: 300px;
   transform: translate(-50%);
+  cursor: pointer;
 }
 
 header {
@@ -34,17 +35,19 @@ header {
   align-items: center;
   position: fixed;
   z-index: 10;
+  padding: 20px;
 }
 header #knapp {
-  height: 40px;
-  width: 30px;
+  height: 30px;
+  width: 20px;
   background-image: url("../src/assets/ikoner/misc.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 header #knapp.visible {
-  height: 25px;
+  height: 30px;
   width: 20px;
   background-image: url("../src/assets/ikoner/X-.png");
   background-size: contain;
