@@ -1,0 +1,61 @@
+@import url("https://use.typekit.net/wgt3qdl.css");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800&display=swap');
+
+$default-font-family: 'lft-etica',sans-serif;
+$default-header-family: 'montserrat';
+$default-p-size: 18px;
+$default-header-size: 50px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #f2f2f2;
+
+    p {
+        font-family: $default-font-family;
+    }
+
+    h1 {
+        font-family: $default-header-family;
+    }
+}
+
+
+header {
+    height: 10vh;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 9998;
+
+    #misc {
+        height: 30px;
+        width: 20px;
+        background-image: url("../src/assets/ikoner/misc.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 30px;
+        margin-right: 30px;
+    }
+
+    #tilbake {
+        height: 30px;
+        width: 20px;
+        background-image: url("../src/assets/ikoner/pilv.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
+
+
