@@ -31,6 +31,7 @@ body {
     left: 95vw;
     top: 300px;
     transform: translate(-50%);
+    cursor: pointer;
 }
 
 @mixin search {
@@ -67,21 +68,23 @@ header {
     align-items: center;
     position: fixed;
     z-index:10;
+    padding: 20px;
 
 
 
     #knapp {
-        height: 40px;
-        width: 30px;
+        height: 30px;
+        width: 20px;
         background-image: url("../src/assets/ikoner/misc.png");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
+        cursor: pointer;
 
     }
 
     #knapp.visible {
-        height: 25px;
+        height: 30px;
         width: 20px;
         background-image: url("../src/assets/ikoner/X-.png");
         background-size: contain;
@@ -318,6 +321,7 @@ main {
         color: $default-font-color;
         padding: 70vh 80px 0 60px;
     }
+    
 
     h2 {
         font-family: $default-header-family;
@@ -338,6 +342,10 @@ main {
         padding: 90px;
         padding-top: 15px;
         display: inline-block;
+        cursor: default;
+    }
+    img{
+        cursor: pointer;
     }
 
     .item1 {
