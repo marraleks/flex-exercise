@@ -276,6 +276,10 @@ main a {
   padding: 90px;
   padding-top: 15px;
   display: inline-block;
+  cursor: default;
+}
+main img {
+  cursor: pointer;
 }
 main .item1 {
   background-image: url("../src/img/nyeste/riktigformat_Aron.jpg");
