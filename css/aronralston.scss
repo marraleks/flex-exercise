@@ -255,6 +255,7 @@ header {
             }
             audio {
                 margin-right: 30px;
+                outline: none;
             }
         }
     }
@@ -296,60 +297,56 @@ header {
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     z-index: 5010;
     background-color: #f2f2f2;
     opacity: 0;
-    padding-top: 200px;
+    align-items: center;
+    z-index: 5045;
 
     .container {
         min-width: 50vw;
-        height: 100vh;
         display: flex;
-
         .bloodrock {
             background-image: url("../src/img/AronRalston/BloodRock.png");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 508px;
-            width: 300px;
-            margin-left: 300px;
+            height: 70vh;
+            width: 50%;
+            margin-left: 35%;
+            margin-top: -10%
         }
-
         .trapped {
             background-image: url("../src/img/AronRalston/Trapped.png");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 200px;
-            width: 405px;
-            margin-left: -200px;
-            margin-top: 350px;
+            height: 30vh;
+            width: 130%;
+            margin-top: 110%;
+            margin-left: -50%;
         }
     }
-
-    .tekst {
-        margin-top: -200px;
-        margin-left: 50px;
+        
+        .tekst {
+        margin-left: 100px;
+        .wrap{
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
         h1 {
             font-size: $default-header-size;
             color: #2C2C2C;
-            padding-bottom: 50px;
-            margin-left: 50px;
-        }
-        .wrap {
-
-            display: flex; 
-            flex-direction: row;
         }
         p {
             font-size: $default-p-size;
-            font-weight: 300;
-            margin-left: 50px;
-            width: 270px;
+            font-weight: 300; 
+            width: 90%;
+            padding-bottom: 20px;
+           
         }
     }
 }
@@ -357,12 +354,15 @@ header {
 
 
 .artikkel6 {
+    z-index: 5049;
     width: 100vw;
     height: 100vh;
     position: fixed;
-    top: 100vh;
+    opacity: 0;
+    background-color: #2C2C2C;
     .iframe {
         align-content: center;
+        
     }
 }
 
@@ -370,7 +370,7 @@ header {
     background-color: rgba(0, 0, 0, 0);
     height: 100vh;
     width: 100vw;
-    z-index: 5002;
+    z-index: 5042;
     position: fixed;
 }
 
