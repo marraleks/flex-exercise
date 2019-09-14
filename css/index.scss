@@ -18,6 +18,9 @@ body {
     background-color: #334640;
 }
 
+
+// MENY 
+
 #pilh {
     display: block;
     background-image: url("../src/assets/ikoner/pilh.png");
@@ -201,7 +204,7 @@ header {
     }
 
 
-    // RESPONSIVT 
+    // RESPONSIV MENY
 
 
     @media (max-width:850px) {
@@ -298,7 +301,7 @@ header {
 
 }
 
-/* SIDENS INNHOLD */
+// SIDENS INNHOLD
 
 .logo {
     display: block;
@@ -473,7 +476,7 @@ main {
         }
     }
 }
-
+// RESPONSIV SIDENS INNHOLD 
 
 @media (max-width:1100px) {
     main {
