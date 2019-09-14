@@ -1,7 +1,8 @@
 @import url("https://use.typekit.net/wgt3qdl.css");
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800&display=swap');
 
-$default-font-family: 'lft-etica',sans-serif;
+$default-font-family: 'lft-etica',
+sans-serif;
 $default-header-family: 'montserrat';
 $default-p-size: 18px;
 $default-header-size: 50px;
@@ -86,6 +87,7 @@ header {
         background-repeat: no-repeat;
         cursor: pointer;
     }
+
     #tilbake.visible {
         width: 0;
     }
@@ -138,6 +140,7 @@ header {
 
         .logo-menu {
             height: 50px;
+
             img {
                 height: 100%;
             }
@@ -198,8 +201,9 @@ header {
         grid-template-columns: auto auto;
         justify-content: space-between;
         align-items: center;
-        .item{
-            padding-top:10px;
+
+        .item {
+            padding-top: 10px;
         }
 
         h4 {
@@ -293,10 +297,10 @@ header {
     }
 
     @media (max-width:500px) {
-        .overlay-menu 
-        .box{
-            margin-top:0px;
+        .overlay-menu .box {
+            margin-top: 0px;
         }
+
         .overlay-footer {
             grid-template-columns: 1fr;
         }
@@ -325,7 +329,7 @@ header {
 
 
 
-// Introside
+// Aron Ralsston intro
 .artikkel1 {
     height: 100vh;
     width: 100vw;
@@ -378,8 +382,8 @@ header {
     overflow: hidden;
     position: fixed;
     top: 100vh;
-   
-    .left{
+
+    .left {
         z-index: 2;
         width: 101%;
         height: 260vh;
@@ -387,7 +391,8 @@ header {
         left: 0vw;
         z-index: 102;
     }
-    .right{
+
+    .right {
         z-index: 1;
         width: 101%;
         height: 260vh;
@@ -395,6 +400,7 @@ header {
         right: 0vw;
         z-index: 101;
     }
+
     .grottetekst {
         margin: auto;
         margin-left: 29%;
@@ -403,13 +409,14 @@ header {
         position: absolute;
         top: 100vh;
         z-index: 105;
+
         p {
             font-family: $default-p-size;
             font-weight: 300;
             font-size: 22px;
             color: #f2f2f2;
             text-align: center;
-        }    
+        }
     }
 }
 
@@ -424,11 +431,13 @@ header {
     position: fixed;
     top: 100vh;
     background-color: #f2f2f2;
-    .tekst{
-        margin-top:100px;
+
+    .tekst {
+        margin-top: 100px;
         margin-left: 40px;
         margin-right: 40px;
         text-align: left;
+
         h1 {
             font-family: $default-header-family;
             font-size: $default-header-size;
@@ -436,6 +445,7 @@ header {
             margin-left: 100px;
             padding-bottom: 50px;
         }
+
         p {
             font-family: 'lft-etica';
             font-weight: 300;
@@ -443,77 +453,82 @@ header {
             margin-left: 120px;
             font-size: 18px;
         }
-      } 
     }
-    .mat {
-      min-width: 60vw;
-      height: 100vh;
-      display: flex;
-      margin-top: 40px;
-      background-image: url("../src/img/AronRalston/ration.jpg");
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: 80vh;     
-    } 
+}
 
-    .verktoy {
+.mat {
+    min-width: 60vw;
+    height: 100vh;
+    display: flex;
+    margin-top: 40px;
+    background-image: url("../src/img/AronRalston/ration.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 80vh;
+}
+
+.verktoy {
+    min-width: 50vw;
+    height: 100vh;
+    margin-left: 10px;
+    display: flex;
+    margin-top: 280px;
+    background-image: url("../src/img/AronRalston/supplies.jpg");
+    background-repeat: no-repeat;
+    background-size: 70vh;
+}
+
+
+
+
+
+.artikkel35 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    left: 100vw;
+    background-color: #f2f2f2;
+    z-index: 5050;
+
+    .container {
         min-width: 50vw;
         height: 100vh;
-        margin-left: 10px;
         display: flex;
-        margin-top: 280px;
-        background-image: url("../src/img/AronRalston/supplies.jpg");
-        background-repeat: no-repeat;
-        background-size: 70vh;  
+        justify-content: center;
+        align-items: center;
     }
 
-
-
-
-
-    .artikkel35 {
-        height: 100vh;
-        width: 100vw;
+    .tekst1 {
         display: flex;
-        position: fixed;
-        left: 100vw;
-        background-color: #f2f2f2;
-        z-index: 5050;
-        .container {
-            min-width: 50vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 100px;
+
+        h1 {
+            font-family: $default-header-family;
+            font-size: $default-header-size;
+            color: #2C2C2C;
+            align-self: flex-end;
+            padding-bottom: 50px;
+            padding-right: 50px;
         }
-    
-        .tekst1 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding-left: 100px;
-            h1 {
-                font-family: $default-header-family;
-                font-size: $default-header-size;
-                color: #2C2C2C;
-                align-self: flex-end;
-                padding-bottom: 50px;
-                padding-right: 50px;
-            }
-            p {
-                font-size: $default-p-size;
-                color: #2c2c2c;
-                font-weight: 300;
-                padding-bottom: 50px;
-                padding-right: 30px;
-            }
-            audio {
-                margin-right: 30px;
-                outline: none;
-            }
+
+        p {
+            font-size: $default-p-size;
+            color: #2c2c2c;
+            font-weight: 300;
+            padding-bottom: 50px;
+            padding-right: 30px;
+        }
+
+        audio {
+            margin-right: 30px;
+            outline: none;
         }
     }
+}
 
 
 // Nattartikkel
@@ -539,6 +554,7 @@ header {
         position: absolute;
         padding-left: 54%;
         padding-right: 7%;
+
         p {
             font-size: $default-p-size;
             color: #f2f2f2;
@@ -562,6 +578,7 @@ header {
     .container {
         min-width: 50vw;
         display: flex;
+
         .bloodrock {
             background-image: url("../src/img/AronRalston/BloodRock.png");
             background-size: cover;
@@ -572,6 +589,7 @@ header {
             margin-left: 35%;
             margin-top: -10%
         }
+
         .trapped {
             background-image: url("../src/img/AronRalston/Trapped.png");
             background-size: cover;
@@ -583,31 +601,34 @@ header {
             margin-left: -50%;
         }
     }
-        
-        .tekst {
+
+    .tekst {
         margin-left: 100px;
-        .wrap{
+
+        .wrap {
             display: flex;
             flex-direction: row;
             margin-top: 50px;
             flex-wrap: wrap;
         }
+
         h1 {
             font-size: $default-header-size;
             color: #2C2C2C;
         }
+
         p {
             font-size: $default-p-size;
-            font-weight: 300; 
+            font-weight: 300;
             width: 90%;
             padding-bottom: 20px;
-           
+
         }
     }
 }
 
 
-
+// Avsluttende video
 .artikkel6 {
     z-index: 5049;
     width: 100vw;
@@ -615,9 +636,10 @@ header {
     position: fixed;
     opacity: 0;
     background-color: #2C2C2C;
+
     .iframe {
         align-content: center;
-        
+
     }
 }
 
@@ -636,3 +658,38 @@ header {
     position: fixed;
 }
 
+
+/* Utvikling av tidslinje/navigasjon
+#venstrenav-wrap {
+    background-color: red;
+    height: 246px;
+    width: 100px;
+    position: fixed;
+    top: calc(50% - 123px);
+    overflow: hidden;
+    z-index: 9999;
+    transition: 2s cubic-bezier(.19,1,.22,1);
+    user-select: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-family: $default-header-family;
+    
+
+        .container{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+        
+        }
+        .linje{
+            background-color: blue;
+            width: 40px;
+            height: 2px;     
+    }
+    .text{
+        color: white;
+    }
+    }
+ */
