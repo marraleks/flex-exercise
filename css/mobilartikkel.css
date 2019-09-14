@@ -79,6 +79,7 @@ body h1 {
   .artikkel3 .audio {
     padding-top: 30px;
     padding-left: 140px;
+    outline: none;
   }
 
   .artikkel4 {
