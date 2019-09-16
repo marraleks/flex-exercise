@@ -281,8 +281,8 @@
 
 
   <!-- Sluttvideo -->
-  <div class="artikkel6" data-14500="opacity: 0;" data-15000="opacity: 1">
-    <iframe src="https://player.vimeo.com/video/64610696" width="100%" height="100%" frameborder="0"
+  <div class="artikkel6" data-14500="opacity: 0;" data-14500="opacity: 1;" data-15000="opacity: 1;">
+    <iframe id="vimeo" src="https://player.vimeo.com/video/64610696#t=36s" width="100%" height="100%" frameborder="0"
       allow="autoplay; fullscreen" allowfullscreen></iframe>
   </div>
 
@@ -290,14 +290,25 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
   </script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
   <script src="../js/skrollr.js"></script>
   <script src="../js/index.js"></script>
   <script>
+    var iframe = document.querySelector('#vimeo');
+    var player = new Vimeo.Player(iframe);
     var s = skrollr.init({
       render: function (data) {
         //Log the current scroll position.
         $('#info').text(data.curTop);
+        if(data.curTop > 14000){
+          player.play();
+        }
       }
+    });
+
+
+    player.on('play', function() {
+      console.log('Played the video');
     });
   </script>
 </body>
