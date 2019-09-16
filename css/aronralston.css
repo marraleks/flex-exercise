@@ -1,5 +1,5 @@
 @import url("https://use.typekit.net/wgt3qdl.css");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,500,600,700,800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -548,6 +548,36 @@ header #knapp.visible {
   position: fixed;
 }
 
+@media (max-width: 1000px) {
+  #utvid {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #334640;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #utvid img {
+    padding-bottom: 50px;
+  }
+  #utvid h1 {
+    color: #f2f2f2;
+    font-family: "montserrat";
+    font-size: 25px;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-weight: 300;
+  }
+}
+@media (min-width: 1000px) {
+  #utvid {
+    display: none;
+  }
+}
 /* Utvikling av tidslinje/navigasjon
 #venstrenav-wrap {
     background-color: red;
