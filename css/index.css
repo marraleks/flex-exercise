@@ -1,5 +1,5 @@
 @import url("https://use.typekit.net/wgt3qdl.css");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,500,600,700,800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -149,6 +149,7 @@ header #knapp.visible {
   padding-top: 10px;
 }
 .overlay-menu .overlay-footer h4 {
+  font-family: "montserrat";
   padding-top: 14px;
   color: #D15827;
   font-size: 14px;
@@ -156,6 +157,7 @@ header #knapp.visible {
   font-weight: 500;
 }
 .overlay-menu .overlay-footer p {
+  font-family: "montserrat";
   color: #D15827;
   font-size: 12px;
   font-weight: 300;
@@ -237,7 +239,6 @@ header #knapp.visible {
   top: 0;
 }
 
-/* SIDENS INNHOLD */
 .logo {
   display: block;
   position: absolute;

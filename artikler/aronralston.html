@@ -307,6 +307,8 @@
         $('#info').text(data.curTop);
         if(data.curTop > 14500){
           player.play();
+        }else{
+          player.pause();
         }
       }
     });
